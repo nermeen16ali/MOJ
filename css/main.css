@@ -600,7 +600,7 @@ body:has(.header) {
   color: var(--text-color);
   font-size: 15px;
   font-weight: 300;
-  line-height: 18.75px;
+  /* line-height: 18.75px; */
 }
 .services {
   background: radial-gradient(
@@ -1089,7 +1089,7 @@ body:has(.header) {
     margin-bottom: 52px;
   }
   .menu_icon_close img {
-    width: 24px;
+    width: 18px;
   }
   .main_footer p span,
   .menu_footer p span {
