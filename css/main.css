@@ -119,7 +119,7 @@ li {
 }
 .chat_button {
   position: fixed;
-  z-index: 2;
+  z-index: 999;
   bottom: 77px;
   inset-inline-start: 93px;
   cursor: pointer;
@@ -150,6 +150,7 @@ li {
   padding-top: 67px;
   padding-bottom: 81px;
   height: 100vh;
+  z-index: 9999;
 }
 .menu .container-fluid {
   display: flex;
@@ -322,7 +323,7 @@ footer .main_footer_copyright {
   top: 0;
   inset-inline-start: 0;
   height: 132px;
-  z-index: 9;
+  z-index: 9999;
   /* transition: all 0.3s ease-in-out; */
 }
 .header.scrolled {
@@ -371,6 +372,8 @@ body:has(.header) {
 }
 .hero_section {
   padding-top: 52px;
+  position: relative;
+  z-index: 99;
 }
 .hero_section h3 {
   color: var(--main-dark-color);
@@ -525,8 +528,13 @@ body:has(.header) {
   z-index: 5;
 }
 .card_text .login_btn {
-  display: none;
+  visibility:hidden;
+  opacity: 0;
   padding: 17px 22px 19px 36px;
+  position: absolute;
+  bottom: 42px;
+  left: 50%;
+  transform: translateX(-50%);
   margin-inline: auto;
   transition: all 0.4s ease-in-out;
 }
@@ -535,16 +543,21 @@ body:has(.header) {
   transition: all 0.4s ease-in-out;
 }
 .inner_hero_card:hover .hero_card::before {
-  transform: rotate(45deg) scale(1.2);
+  transform: rotate(45deg) scale(1.4);
 }
 .inner_hero_card:hover .card_text h2 {
   transform: scale(1.1);
 }
 .inner_hero_card:hover .enter_btn {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
+
 .inner_hero_card:hover .login_btn {
-  display: inline-block;
+  /* display: inline-block; */
+  visibility: visible;
+  opacity: 1;
+  bottom: 2px;
 }
 .inner_hero_card:hover {
   transform: translateY(-20px);
@@ -1726,7 +1739,7 @@ body:has(.header) {
     position: absolute;
     transform: translateY(-50%);
     inset-inline-end: 42px;
-    top: 34;
+    top: 34px;
   }
 }
 
