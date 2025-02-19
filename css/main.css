@@ -119,7 +119,7 @@ li {
 }
 .chat_button {
   position: fixed;
-  z-index: 999;
+  z-index: 9999999;
   bottom: 77px;
   inset-inline-start: 93px;
   cursor: pointer;
@@ -528,7 +528,7 @@ body:has(.header) {
   z-index: 5;
 }
 .card_text .login_btn {
-  visibility:hidden;
+  visibility: hidden;
   opacity: 0;
   padding: 17px 22px 19px 36px;
   position: absolute;
@@ -946,14 +946,10 @@ body:has(.header) {
   margin-top: 6px;
 }
 .accordion-button:not(.collapsed)::after {
-  /* background-image: url(../images/non_collapsed_btn_icon.svg); */
-  transform: rotate(0);
-  background: none;
-  content: url(../images/non_collapsed_btn_icon.svg);
-  position: absolute;
-  transform: translateY(-50%);
-  inset-inline-end: 42px;
-  top: 40px;
+  margin-left: unset;
+  margin-right: auto;
+  background-image: url(../images/non_collapsed_btn_icon.svg);
+  margin-top: -10px;
 }
 .odometer {
   direction: ltr;
@@ -1322,6 +1318,9 @@ body:has(.header) {
     width: 24px;
   }
   .header {
+    height: 92px;
+  }
+  .header.scrolled {
     height: 72px;
   }
   .large_heading {
@@ -1688,6 +1687,16 @@ body:has(.header) {
     inset-inline-end: 42px;
     top: 40px;
   }
+  .accordion-button:not(.collapsed)::after {
+    background: none;
+    transform: rotate(0);
+    transform: translateY(-50%);
+    inset-inline-end: 42px;
+    background: none;
+    content: url(../images/non_collapsed_btn_icon.svg);
+    position: absolute;
+    top: 40px;
+  }
 }
 /* Large Screens */
 @media (min-width: 1440px) {
@@ -1741,6 +1750,16 @@ body:has(.header) {
     inset-inline-end: 42px;
     top: 34px;
   }
+  .accordion-button:not(.collapsed)::after {
+    background: none;
+    transform: rotate(0);
+    transform: translateY(-50%);
+    inset-inline-end: 42px;
+    background: none;
+    content: url(../images/non_collapsed_btn_icon.svg);
+    position: absolute;
+    top: 40px;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -1752,11 +1771,11 @@ body:has(.header) {
     padding-top: 16px;
   }
   .download {
-    margin-top: -250px;
+    margin-top: -230px;
   }
   .download .download_text {
     max-width: 634px;
-    padding-top: 400px;
+    padding-top: 460px;
   }
   .outer_hero_card .hover_shadow {
     bottom: -80px;
