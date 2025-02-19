@@ -68,7 +68,7 @@ body {
   font-size: 17px;
   font-weight: 400;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 5px;
   height: 8px;
 }
@@ -84,7 +84,7 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #b8b2b3b8;
-}
+} */
 a {
   text-decoration: none;
 }
@@ -96,7 +96,7 @@ li {
 }
 .section_heading_2 {
   font-size: var(--font-size-heading-2);
-  font-weight: 500;
+  font-weight: 400;
   white-space: nowrap;
 }
 .main_colored_heading {
@@ -183,7 +183,7 @@ li {
 }
 /*================================= Login Page ====================================*/
 .login {
-  padding-top: 46px;
+  padding-top: 45px;
   min-height: 100vh;
   position: relative;
   padding-bottom: 133px;
@@ -218,6 +218,8 @@ footer .main_footer_copyright {
 }
 .main_footer_copyright span {
   font-size: 11px;
+  margin-top: 6px;
+  display: inline-block;
 }
 .go_back {
   color: var(--main-dark-color);
@@ -235,7 +237,7 @@ footer .main_footer_copyright {
 }
 .subtitle {
   font-size: 29px;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--main-dark-color);
   margin-top: 24px;
   margin-bottom: 42px;
@@ -394,7 +396,7 @@ body:has(.header) {
   padding-top: 56px;
   overflow: hidden;
   z-index: 2;
-  margin-top: -16px;
+  /* margin-top: -14px; */
   width: 100%;
   padding-bottom: 49px;
 }
@@ -417,12 +419,13 @@ body:has(.header) {
   line-height: 45px;
   color: var(--main-dark-color);
   margin-bottom: 23px;
+  transition: all 0.4s ease-in-out;
 }
 .hero_card .card_text p {
   color: var(--text-color);
   font-size: 15px;
   font-weight: 300;
-  line-height: 18.75px;
+  /* line-height: 18.75px; */
   margin-bottom: 42px;
   max-width: 213px;
   margin-inline: auto;
@@ -431,6 +434,7 @@ body:has(.header) {
   color: var(--white-color);
   background-color: var(--bg-main-color);
   border-radius: 20px 20px 138px 20px;
+  /* clip-path: polygon(0 0, 14% 0, 28% 10%, 73% 10%, 88% 0, 100% 0, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%); */
 }
 .hero_card.blue_card .card_text p,
 .hero_card.blue_card .card_text h2 {
@@ -442,7 +446,6 @@ body:has(.header) {
 .outer_hero_card .hover_shadow {
   position: absolute;
   content: "";
-  bottom: -60px;
   inset-inline-start: 0;
   width: -webkit-fill-available;
   z-index: -1;
@@ -534,9 +537,6 @@ body:has(.header) {
 .inner_hero_card:hover .hero_card::before {
   transform: rotate(45deg) scale(1.2);
 }
-.inner_hero_card:hover + .hover_shadow {
-  bottom: -70px;
-}
 .inner_hero_card:hover .card_text h2 {
   transform: scale(1.1);
 }
@@ -553,12 +553,27 @@ body:has(.header) {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 0;
+  top: -2px;
   z-index: 4;
+}
+.card_shape svg path {
+  fill: #f7fafb !important;
+}
+.card_shape svg path {
+  fill: #f7fafb !important;
+}
+.card_shape svg path {
+  fill: #f7fafb !important;
+}
+.card_shape.gray svg path {
+  fill: #eef4f6 !important;
 }
 .card_logo {
   z-index: 5;
-  position: relative;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -13px;
 }
 .learn_more {
   display: flex;
@@ -602,15 +617,16 @@ body:has(.header) {
   font-size: var(--font-size-heading-4-02);
   color: var(--main-color);
   letter-spacing: -2.01px;
-  font-weight: 500;
+  /* font-weight: 500; */
+  font-weight: 400;
   margin-top: 21px;
-  margin-bottom: 17px;
+  margin-bottom: 10px;
 }
 .nav_card p {
   color: var(--text-color);
   font-size: var(--font-size-text-01);
   font-weight: 300;
-  line-height: 23.75px;
+  /* line-height: 23.75px; */
   max-width: 241px;
 }
 .nav_card.active {
@@ -637,11 +653,11 @@ body:has(.header) {
   padding-bottom: 25px;
   letter-spacing: -1.59px;
   font-size: var(--font-size-text-largest);
-  font-weight: 500;
+  /* font-weight: 500; */
   border: 0;
 }
 .services .nav-link:not(:last-child) {
-  margin-inline-end: 62px;
+  margin-inline-end: 51px;
 }
 .services .nav-link svg {
   margin-inline-end: 14px;
@@ -732,6 +748,7 @@ body:has(.header) {
 .download .img-container {
   position: absolute;
   bottom: -90px;
+  left: 0%;
 }
 .download_text h2 {
   color: var(--main-dark-color);
@@ -743,7 +760,7 @@ body:has(.header) {
 .download_text p {
   color: var(--text-color);
   font-weight: 300;
-  line-height: 21.25px;
+  /* line-height: 21.25px; */
   margin-top: 29.25px;
   margin-bottom: 68.87px;
 }
@@ -817,15 +834,15 @@ body:has(.header) {
 }
 .faq .highlighted_text img {
   position: absolute;
-  bottom: -24px;
+  bottom: -32px;
   inset-inline-start: -54px;
 }
 .faq .nav-tabs {
-  gap: 15px;
+  /* gap: 15px; */
   border-bottom: 0;
 }
 .faq h1 {
-  margin-bottom: 58px;
+  margin-bottom: 85px;
 }
 .faq .nav-link {
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -834,8 +851,11 @@ body:has(.header) {
   font-size: var(--font-size-text-01);
   color: var(--main-dark-color);
   font-weight: 500;
-  line-height: 23.75px;
+  /* line-height: 23.75px; */
   margin-bottom: 23px;
+}
+.faq .nav-link:not(:last-child) {
+  margin-inline-end: 15px;
 }
 .faq .nav-tabs .nav-link.active {
   background-color: var(--bg-main-color);
@@ -870,7 +890,7 @@ body:has(.header) {
   padding: 0;
   color: var(--text-color);
   font-weight: 300;
-  line-height: 23.75px;
+  /* line-height: 23.75px; */
   font-size: var(--font-size-text-01);
   padding: 0 46px 38px 46px;
 }
@@ -881,6 +901,9 @@ body:has(.header) {
 }
 .accordion-item:has(.accordion-button:not(.collapsed)) {
   background: rgba(34, 73, 157, 0.07);
+}
+.accordion-button:not(.collapsed) {
+  color: var(--main-color);
 }
 .accordion-button:not(.collapsed),
 .accordion-item:last-of-type .accordion-button.collapsed {
@@ -900,14 +923,26 @@ body:has(.header) {
   background-color: transparent;
 }
 .accordion-button::after {
-  margin-left: unset;
+  /* margin-left: unset;
   margin-right: auto;
   background-image: url(../images/collapsed_btn_icon.svg);
-  margin-top: 6px;
+  margin-top: 6px; */
+  background: none;
+  content: url(../images/collapsed_btn_icon.svg);
+  position: absolute;
+  transform: translateY(-50%);
+  inset-inline-end: 42px;
+  top: 40px;
 }
 .accordion-button:not(.collapsed)::after {
-  background-image: url(../images/non_collapsed_btn_icon.svg);
+  /* background-image: url(../images/non_collapsed_btn_icon.svg); */
   transform: rotate(0);
+  background: none;
+  content: url(../images/non_collapsed_btn_icon.svg);
+  position: absolute;
+  transform: translateY(-50%);
+  inset-inline-end: 42px;
+  top: 40px;
 }
 .odometer {
   direction: ltr;
@@ -1422,13 +1457,17 @@ body:has(.header) {
 }
 @media (min-width: 992px) {
   .view_all {
-    margin-top: 24px;
+    margin-top: 38px;
   }
   /* .download {
     margin-top: -100px;
   } */
-  .learn_more {
+  /* .learn_more {
     margin-top: 38px;
+  } */
+  .learn_more {
+    margin-top: 15px;
+    margin-bottom: 12px;
   }
   .hero_card .card_text h2 {
     /* max-width: 180px; */
@@ -1517,9 +1556,9 @@ body:has(.header) {
     font-size: 19px;
     line-height: unset;
   }
-  .faq .nav-tabs {
+  /* .faq .nav-tabs {
     gap: 8px;
-  }
+  } */
   .view_all img {
     margin-inline-start: 32px;
   }
@@ -1619,10 +1658,13 @@ body:has(.header) {
 /* Large Screens */
 @media (min-width: 1440px) {
   .inner_row {
-    padding-inline: 40px;
+    padding-inline: 30px;
   }
   .faq_wrapper {
     padding-inline-start: 55px;
+  }
+  .hero_section .container-fluid {
+    padding-inline: 10.1%;
   }
   .container-fluid {
     padding-inline: 9.6%;
@@ -1631,24 +1673,59 @@ body:has(.header) {
     padding: 13px 37px 12px 32px;
   }
   .download {
-    margin-top: -165px;
+    /* margin-top: -165px; */
+    margin-top: -210px;
   }
   .download .download_text {
-    padding-top: 419px;
+    /* padding-top: 400px; */
+    padding-top: 340px;
   }
   .nav_card.active h3 {
     line-height: 43.75px;
   }
+  .nav_card_icon {
+    width: 68px;
+    height: 68px;
+  }
+  .outer_hero_card .hover_shadow {
+    bottom: -70px;
+  }
+  .inner_hero_card:hover + .hover_shadow {
+    bottom: -80px;
+  }
+  /* .download .img-container {
+    left: 6%;
+  } */
+  .download .img-container img{
+    max-width: 835px;
+  }
 }
 
 @media (min-width: 1600px) {
-  .inner_row {
-    padding-inline: 130px;
+  .container-fluid {
+    padding-inline: 13.5%;
   }
   .faq_wrapper {
-    padding-inline-start: 91px;
+    padding-inline-start: 54px;
+    padding-top: 16px;
+  }
+  .download {
+    margin-top: -250px;
   }
   .download .download_text {
     max-width: 634px;
+    padding-top: 400px;
+  }
+  .outer_hero_card .hover_shadow {
+    bottom: -80px;
+  }
+  .inner_hero_card:hover + .hover_shadow {
+    bottom: -90px;
+  }
+  .download .img-container {
+    left: 6%;
+  }
+  .download .img-container img{
+    max-width: unset;
   }
 }
