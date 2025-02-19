@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/Yasir_Logo_Horizontal.svg" />
+        <title>منصة يَسِّر</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+            rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="container login">
+            <!-- Header -->
+            <header
+                class="d-flex justify-content-between align-items-center">
+                <div>
+                    <a href="index.html" class="go_back">
+                        <img src="images/back-arrow.svg" alt>
+                        <span>عودة إلى المنصة</span>
+                    </a>
+                    <span class="Yasir_logo img-container">
+                        <img src="images/Yasir_Logo_Horizontal.svg"
+                            class="img-fluid"
+                            alt="Yasir Logo">
+                    </span>
+                </div>
+                <div>
+                    <span class="Moj_logo img-container">
+                        <img src="images/MOJ_Logo.svg" class="img-fluid"
+                            alt="Moj Logo">
+                    </span>
+                    <button class="switch_btn"
+                        id="directionSwitch"> English </button>
+                </div>
+            </header>
+
+            <!-- Main Content -->
+            <main class="main-content text-center">
+                <div class="img-container">
+                    <img src="images/Login_User.svg" alt="Judge Icon"
+                        class="judge_icon img-fluid">
+                </div>
+                <h1 class="section_heading_2">خدمات
+                    <span class="highlighted_text">
+                        القضاة
+                        <img src="images/Yasir_Text_Highlight.svg"
+                            alt="Yasir Text Highlight">
+                    </span>
+                </h1>
+                <h2 class="subtitle">تسجيل الدخول</h2>
+
+                <div class="login_form">
+                    <form>
+                        <div class="input_group">
+                            <span class="input_group_icon img-container">
+                                <img src="images/input_icon.svg"
+                                    class="img-fluid" alt="Icon">
+                            </span>
+                            <input type="text" class="form-control"
+                                placeholder="الرقم المدني">
+                        </div>
+
+                        <div class="input_group">
+                            <span class="input_group_icon img-container">
+                                <img src="images/password_icon.svg"
+                                    alt="Password Icon" class="img-fluid">
+                            </span>
+                            <input type="password" class="form-control"
+                                placeholder="كلمة المرور" id="password">
+                            <span class="toggle-password img-container"
+                                id="togglePassword"><img
+                                    src="images/password_toggle.svg"
+                                    class="img-fluid" alt></span>
+                        </div>
+
+                        <div class="request_support">هل تواجه أي مشكلة؟
+                            <a href="#">أطلب المساعدة
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="21" height="21" viewBox="0 0 21 21"
+                                    fill="none">
+                                    <mask id="mask0_403_408"
+                                        style="mask-type:luminance"
+                                        maskUnits="userSpaceOnUse" x="0" y="0"
+                                        width="21" height="21">
+                                        <path
+                                            d="M20.243 0.634277H0.751038V20.0933H20.243V0.634277Z"
+                                            fill="white" />
+                                    </mask>
+                                    <g mask="url(#mask0_403_408)">
+                                        <path
+                                            d="M0.751029 10.3593C0.746109 9.07843 0.995224 7.80932 1.48396 6.62538C1.9727 5.44143 2.69136 4.36616 3.59836 3.46176C4.50536 2.55736 5.5827 1.8418 6.76804 1.35647C7.95339 0.871133 9.2232 0.625667 10.504 0.634271C11.7854 0.621465 13.0565 0.864195 14.2431 1.34827C15.4296 1.83235 16.5077 2.54807 17.4145 3.45361C18.3212 4.35914 19.0384 5.43632 19.524 6.62219C20.0097 7.80807 20.2541 9.07885 20.243 10.3603C20.2573 11.6416 20.0157 12.913 19.5322 14.0997C19.0487 15.2864 18.3331 16.3647 17.4274 17.2712C16.5217 18.1778 15.4441 18.8944 14.2578 19.3789C13.0715 19.8635 11.8004 20.1064 10.519 20.0933C9.23541 20.1067 7.96197 19.8644 6.77301 19.3804C5.58406 18.8964 4.50341 18.1804 3.59412 17.2743C2.68483 16.3682 1.96512 15.29 1.47698 14.1028C0.988847 12.9155 0.742062 11.6429 0.751029 10.3593ZM10.518 18.9253C11.6398 18.927 12.7509 18.7071 13.7876 18.2784C14.8242 17.8496 15.766 17.2203 16.5588 16.4267C17.3516 15.633 17.9799 14.6906 18.4076 13.6535C18.8353 12.6164 19.0539 11.5051 19.051 10.3833C19.0695 9.25665 18.8609 8.13786 18.4378 7.09356C18.0146 6.04927 17.3855 5.10086 16.588 4.30486C15.7906 3.50886 14.841 2.88157 13.7959 2.46038C12.7508 2.03919 11.6316 1.83272 10.505 1.85327C9.3809 1.8324 8.26404 2.03766 7.22079 2.45686C6.17753 2.87605 5.22916 3.50063 4.432 4.2935C3.63484 5.08637 3.00515 6.03136 2.58033 7.07233C2.15552 8.11331 1.94423 9.22904 1.95903 10.3533C1.95121 11.4803 2.16712 12.5976 2.59426 13.6406C3.0214 14.6836 3.65127 15.6314 4.44737 16.4292C5.24347 17.2269 6.18997 17.8588 7.23203 18.2881C8.2741 18.7175 9.391 18.9357 10.518 18.9303"
+                                            fill="#9A7A44" />
+                                        <path
+                                            d="M11.095 11.7813C11.095 12.4323 11.102 13.0813 11.095 13.7333C11.095 13.9813 11.183 14.0833 11.434 14.0733C11.728 14.0613 12.024 14.0623 12.319 14.0733C12.3979 14.0681 12.477 14.0795 12.5512 14.1068C12.6253 14.1341 12.6929 14.1768 12.7495 14.232C12.8061 14.2872 12.8505 14.3536 12.8797 14.4271C12.9089 14.5006 12.9223 14.5793 12.919 14.6583C12.9245 14.7377 12.9126 14.8173 12.8842 14.8916C12.8557 14.9659 12.8113 15.033 12.7542 15.0884C12.697 15.1437 12.6284 15.1859 12.5533 15.212C12.4781 15.2381 12.3982 15.2474 12.319 15.2393C11.109 15.248 9.89869 15.248 8.68803 15.2393C8.60808 15.247 8.52742 15.2366 8.45203 15.2089C8.37664 15.1812 8.30845 15.1369 8.25247 15.0793C8.1965 15.0217 8.15419 14.9522 8.12867 14.8761C8.10315 14.7999 8.09507 14.719 8.10503 14.6393C8.10112 14.5626 8.11358 14.486 8.14159 14.4145C8.1696 14.343 8.21251 14.2782 8.26747 14.2246C8.32243 14.171 8.38818 14.1297 8.46035 14.1034C8.53252 14.0771 8.60945 14.0666 8.68603 14.0723C8.98603 14.0553 9.29602 14.0583 9.60102 14.0663C9.81302 14.0723 9.92102 14.0033 9.92002 13.7743C9.91469 12.727 9.91469 11.6797 9.92002 10.6323C9.92002 10.4103 9.83002 10.3263 9.60802 10.3403C9.38459 10.3548 9.16046 10.3548 8.93703 10.3403C8.80255 10.3429 8.67234 10.2931 8.57384 10.2015C8.47535 10.1099 8.41626 9.98364 8.40903 9.84933C8.38264 9.7179 8.40694 9.58135 8.47705 9.4671C8.54717 9.35284 8.6579 9.26934 8.78702 9.23333C9.02402 9.18315 9.26579 9.159 9.50803 9.16133C9.79203 9.15033 10.078 9.15233 10.362 9.16133C10.886 9.17633 11.098 9.39533 11.1 9.91733C11.1 10.5373 11.1 11.1583 11.1 11.7783"
+                                            fill="#9A7A44" />
+                                        <path
+                                            d="M11.3861 6.70125C11.3851 6.87509 11.3327 7.04476 11.2356 7.18894C11.1385 7.33313 11.0009 7.4454 10.8402 7.51165C10.6795 7.5779 10.5027 7.59517 10.3322 7.5613C10.1617 7.52743 10.005 7.44392 9.88181 7.32127C9.7586 7.19862 9.67439 7.0423 9.63976 6.87194C9.60512 6.70158 9.62159 6.52479 9.68712 6.36376C9.75264 6.20274 9.86429 6.06467 10.008 5.9669C10.1518 5.86913 10.3212 5.81603 10.495 5.81425C10.6125 5.81125 10.7294 5.83211 10.8386 5.87557C10.9478 5.91903 11.047 5.98419 11.1303 6.06711C11.2136 6.15002 11.2792 6.24897 11.3232 6.35797C11.3671 6.46697 11.3885 6.58375 11.3861 6.70125Z"
+                                            fill="#9A7A44" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <button type="submit"
+                            class="main_btn main_lg_btn">
+                            <span>دخول</span>
+                            <!-- code -->
+                            <lottie-player src="js/MOJ_ADL_Login_Animation.json"
+                                background="transparent" speed="1"
+                                style="width: 72px; height: 72px;" loop
+                                autoplay></lottie-player>
+                        </button>
+                    </form>
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer class="text-center">
+                <p class="main_footer_copyright">
+                    جميع الحقوق محفوظة لـ منصة يَسِّر &copy; 2025
+                    <br>
+                    <span>
+                        صُنع بـ <img src="images/Heart.svg" alt="Heart"
+                            class="heart">في إدارة تطوير النظم -
+                        وزارة العدل
+                    </span>
+                </p>
+            </footer>
+        </div>
+
+        <div class="chat_button">
+            <img src="images/Chat_Icon.svg" alt="Chat">
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script
+            src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+            const togglePassword = document.getElementById("togglePassword");
+            const passwordField = document.getElementById("password");
+            const toggleIcon = togglePassword.querySelector("img");
+
+            togglePassword.addEventListener("click", function () {
+                const isPassword = passwordField.type === "password";
+                passwordField.type = isPassword ? "text" : "password";
+
+                toggleIcon.src = isPassword
+                ? "images/password_toggle.svg"
+                : "images/password_toggle.svg";
+                toggleIcon.alt = isPassword ? "Hide Password" : "Show Password";
+            });
+            });
+        </script>
+    </body>
+</html>
