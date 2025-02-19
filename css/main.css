@@ -1126,6 +1126,9 @@ body:has(.header) {
   .nav-tabs::-webkit-scrollbar {
     display: none;
   }
+  .card_logo img{
+    width: 45px;
+  }
   .services .nav-link:not(:last-child) {
     margin-inline-end: 24px;
   }
