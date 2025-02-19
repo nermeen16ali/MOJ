@@ -121,7 +121,8 @@ li {
   position: fixed;
   z-index: 9999999;
   bottom: 77px;
-  inset-inline-start: 93px;
+  /* inset-inline-start: 93px; */
+  inset-inline-start: 4.8%;
   cursor: pointer;
 }
 .Menu_Icon {
@@ -1001,7 +1002,8 @@ body:has(.header) {
     padding-bottom: 20px;
   }
   .chat_button {
-    bottom: 58px;
+    /* bottom: 58px; */
+    bottom: 142px;
     inset-inline-start: 30px;
   }
   .request_support {
@@ -1626,6 +1628,9 @@ body:has(.header) {
   .inner_hero_card:hover + .hover_shadow {
     bottom: -60px;
   }
+  .chat_button{
+    bottom: 150px;
+  }
 }
 /* Laptop */
 @media (min-width: 1024px) {
@@ -1702,6 +1707,9 @@ body:has(.header) {
     content: url(../images/non_collapsed_btn_icon.svg);
     position: absolute;
     top: 40px;
+  }
+  .chat_button{
+    bottom: 180px;
   }
 }
 /* Large Screens */
