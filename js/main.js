@@ -8,7 +8,7 @@ function closeMenu() {
 
 window.addEventListener("scroll", function () {
   let header = document.querySelector(".header");
-  if (window.scrollY > 117) {
+  if (window.scrollY > 127) {
     header.classList.add("scrolled");
   } else {
     header.classList.remove("scrolled");
