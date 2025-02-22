@@ -1055,6 +1055,9 @@ body:has(.header) {
   .mobile_img {
     width: 200px;
   }
+  .search_group {
+    margin-top: 32px !important;
+  }
 }
 @media (max-width: 991px) {
   :root {
@@ -1280,7 +1283,8 @@ body:has(.header) {
   .faq .highlighted_text img,
   .contact .highlighted_text img,
   .download .highlighted_text img,
-  .statistics .section_heading_2 img {
+  .statistics .section_heading_2 img,
+  .services_header .highlighted_text img {
     inset-inline-start: 0;
     width: 100%;
     bottom: -12px;
