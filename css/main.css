@@ -1749,7 +1749,7 @@ body:has(.header) {
     width: 150px;
   }
   .Yasir_logo {
-    padding-inline-start: 32px;
+    padding-inline-start: 52px;
   }
   .card_text .login_btn {
     padding: 12px 14px;
@@ -1764,7 +1764,8 @@ body:has(.header) {
     bottom: -60px;
   }
   .chat_button {
-    bottom: 150px;
+    /* bottom: 150px; */
+    bottom: 135px;
   }
   .learn_more {
     margin-top: 10px;
