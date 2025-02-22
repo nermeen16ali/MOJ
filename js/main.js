@@ -1,36 +1,48 @@
-function openMenu() {
-  document.body.classList.add("no-scroll");
-}
+// function openMenu() {
+//   document.body.classList.add("no-scroll");
+// }
 
-function closeMenu() {
-  document.body.classList.remove("no-scroll");
-}
+// function closeMenu() {
+//   document.body.classList.remove("no-scroll");
+// }
 
 window.addEventListener("scroll", function () {
   let header = document.querySelector(".header");
+  let menu_icon = document.querySelector(".menu-icon");
   if (window.scrollY > 127) {
+    menu_icon.classList.add("moveToTop")
     header.classList.add("scrolled");
   } else {
+    menu_icon.classList.remove("moveToTop")
     header.classList.remove("scrolled");
   }
 });
 
-const openMenuBtn = document.getElementById("openMenuBtn");
-const closeMenuBtn = document.getElementById("closeMenuBtn");
+// const openMenuBtn = document.getElementById("openMenuBtn");
+// const closeMenuBtn = document.getElementById("closeMenuBtn");
+// const menu = document.getElementById("menu");
+
+// function openMenu() {
+//   menu.classList.add("active");
+//   document.body.classList.add("no-scroll");
+// }
+
+// function closeMenu() {
+//   menu.classList.remove("active");
+//   document.body.classList.remove("no-scroll");
+// }
+
+// openMenuBtn.addEventListener("click", openMenu);
+// closeMenuBtn.addEventListener("click", closeMenu);
+
+const menuToggle = document.getElementById("menuToggle");
 const menu = document.getElementById("menu");
 
-function openMenu() {
-  menu.classList.add("active");
-  document.body.classList.add("no-scroll");
-}
-
-function closeMenu() {
-  menu.classList.remove("active");
-  document.body.classList.remove("no-scroll");
-}
-
-openMenuBtn.addEventListener("click", openMenu);
-closeMenuBtn.addEventListener("click", closeMenu);
+menuToggle.addEventListener("click", function () {
+  menu.classList.toggle("active"); // فتح وإغلاق القائمة
+  menuToggle.classList.toggle("active"); // تغيير الأيقونة
+  document.body.classList.toggle("no-scroll"); // منع التمرير عند الفتح
+});
 
 const createOdometer = (el, value) => {
   const odometer = new Odometer({

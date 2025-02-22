@@ -125,14 +125,16 @@ li {
   inset-inline-start: 4.8%;
   cursor: pointer;
 }
-.Menu_Icon {
+/* .Menu_Icon {
   border: 0;
   background-color: transparent;
-}
+} */
+/* تعطيل التمرير عند فتح القائمة */
 .no-scroll {
   overflow: hidden;
   height: 100vh;
 }
+
 .menu {
   position: fixed;
   top: 0;
@@ -146,19 +148,21 @@ li {
     rgba(26, 48, 101, 0) 104.15%
   );
   transition: right 0.3s ease-in-out;
-  z-index: 1000;
+  z-index: 2000;
   color: var(--white-color);
   padding-top: 67px;
   padding-bottom: 81px;
-  height: 100vh;
-  z-index: 9999;
+  padding-inline-start: 5px;
 }
+
 .menu .container-fluid {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  /* padding-inline: 13.5%; */
 }
+
 .menu_content ul li a {
   color: var(--white-color);
   margin-bottom: 50px;
@@ -167,21 +171,88 @@ li {
   line-height: 41.25px;
   font-weight: 400;
 }
+
 .menu_content ul li a.active {
   color: var(--alt-color);
   font-weight: 500;
 }
-.menu_icon_close {
-  cursor: pointer;
-  margin-bottom: 112px;
-}
+
 .menu.active {
   right: 0;
 }
+
 .menu_footer {
   display: flex;
   align-items: center;
   gap: 43px;
+}
+.menu-icon {
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  position: fixed;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
+  top: 45px;
+}
+.menu-icon.moveToTop {
+  top: 40px;
+}
+.no-scroll .menu-icon::after,
+.no-scroll .menu-icon::before,
+.no-scroll .menu-icon span {
+  background-color: var(--white-color);
+  /* z-index: 9999999; */
+}
+
+.menu_content {
+  margin-top: 112px;
+}
+/* .menu_content, .menu_footer{
+  padding-inline-start: 10px;
+} */
+.menu-icon span,
+.menu-icon::before,
+.menu-icon::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: var(--main-dark-color);
+  transition: transform 0.3s, opacity 0.3s;
+  display: block;
+  border-radius: 9999px;
+  inset-inline-start: 0;
+}
+.menu-icon:not(.active):after {
+  width: 30px;
+}
+.menu-icon::before {
+  /* top: -4px; */
+  top: 8px;
+}
+.menu-icon::after {
+  /* top: 7px; */
+  bottom: 7px;
+}
+
+/* .menu-icon::after {
+  top: 7px;
+} */
+
+.menu-icon.active span {
+  opacity: 0;
+}
+.menu-icon.active::before {
+  transform: translateY(14px) rotate(45deg);
+}
+
+.menu-icon.active::after {
+  transform: translateY(-7px) rotate(-45deg);
 }
 /*================================= Login Page ====================================*/
 .login {
@@ -324,7 +395,7 @@ footer .main_footer_copyright {
   top: 0;
   inset-inline-start: 0;
   height: 127px;
-  z-index: 9999;
+  z-index: 1000;
   /* transition: all 0.3s ease-in-out; */
 }
 .header.scrolled {
@@ -1079,8 +1150,12 @@ body:has(.header) {
   .chat_button img {
     width: 44px;
   }
-  .container-fluid {
+  .container-fluid,
+  .menu .container-fluid {
     padding-inline: 16px;
+  }
+  .menu-icon {
+    inset-inline-start: 16px;
   }
   .go_back span {
     display: none;
@@ -1105,12 +1180,12 @@ body:has(.header) {
     margin-bottom: 32px;
     line-height: unset;
   }
-  .menu_icon_close {
+  /* .menu_icon_close {
     margin-bottom: 52px;
   }
   .menu_icon_close img {
     width: 18px;
-  }
+  } */
   .main_footer p span,
   .menu_footer p span {
     display: block;
@@ -1416,6 +1491,44 @@ body:has(.header) {
   .footer_wrapper {
     padding-top: 16px;
   }
+  .Yasir_logo {
+    padding-inline-start: 42px;
+  }
+  .menu-icon {
+    width: 30px;
+    height: 30px;
+    top: 32px;
+  }
+  .menu-icon.moveToTop {
+    top: 21px;
+  }
+  .menu-icon span,
+  .menu-icon::before,
+  .menu-icon::after {
+    width: 30px;
+    height: 2.5px;
+  }
+  .menu-icon:not(.active):after {
+    width: 24px;
+  }
+  .menu-icon.active::before {
+    transform: translateY(6px) rotate(45deg);
+  }
+  /* .menu-icon span,
+  .menu-icon::before,
+  .menu-icon::after {
+    width: 26px;
+  }
+  .menu-icon::after {
+    width: 20px;
+  } */
+  /* .menu-icon::before {
+    top: -3px;
+  } */
+
+  /* .menu-icon:not(.active) span{
+    width: 24px;
+  } */
   /* .download .img-container {
     bottom: -90px;
     left: 50%;
@@ -1424,8 +1537,12 @@ body:has(.header) {
 }
 /* Tablet */
 @media (min-width: 767px) {
-  .container-fluid {
+  .container-fluid,
+  .menu .container-fluid {
     padding-inline: 3.6%;
+  }
+  .menu-icon {
+    inset-inline-start: 3.6%;
   }
   .large_heading .highlighted_text img {
     bottom: -16px;
@@ -1528,12 +1645,12 @@ body:has(.header) {
   .menu {
     padding-block: 46px;
   }
-  .menu_icon_close {
+  /* .menu_icon_close {
     margin-bottom: 56px;
   }
   .menu_icon_close img {
     width: 27px;
-  }
+  } */
   .menu_content ul li a {
     margin-bottom: 26px;
     font-size: 25px;
@@ -1657,7 +1774,7 @@ body:has(.header) {
 /* Laptop */
 @media (min-width: 1024px) {
   .Yasir_logo {
-    padding-inline-start: 51px;
+    padding-inline-start: 81px;
   }
   .go_back img {
     padding-inline-end: 20px;
@@ -1683,9 +1800,9 @@ body:has(.header) {
   }
 }
 @media (min-width: 1025px) and (max-width: 1440px) {
-  .menu_icon_close {
+  /* .menu_icon_close {
     margin-bottom: 50px;
-  }
+  } */
   .faq .nav-tabs .nav-link {
     padding: 19px 32px 19px 32px;
   }
@@ -1746,8 +1863,12 @@ body:has(.header) {
   .hero_section .container-fluid {
     padding-inline: 10.1%;
   }
-  .container-fluid {
+  .container-fluid,
+  .menu .container-fluid {
     padding-inline: 9.6%;
+  }
+  .menu-icon {
+    inset-inline-start: 9.6%;
   }
   .faq .nav-link {
     padding: 13px 37px 12px 32px;
@@ -1800,8 +1921,12 @@ body:has(.header) {
 }
 
 @media (min-width: 1600px) {
-  .container-fluid {
+  .container-fluid,
+  .menu .container-fluid {
     padding-inline: 13.5%;
+  }
+  .menu-icon {
+    inset-inline-start: 13.5%;
   }
   .faq_wrapper {
     padding-inline-start: 54px;
