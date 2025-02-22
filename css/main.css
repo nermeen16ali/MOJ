@@ -1494,6 +1494,9 @@ body:has(.header) {
   .Yasir_logo {
     padding-inline-start: 42px;
   }
+  .login .Yasir_logo{
+    padding-inline-start: 0;
+  }
   .menu-icon {
     width: 30px;
     height: 30px;
@@ -1777,6 +1780,10 @@ body:has(.header) {
   .Yasir_logo {
     padding-inline-start: 81px;
   }
+  .login .Yasir_logo {
+    padding-inline-start: 51px;
+  }
+
   .go_back img {
     padding-inline-end: 20px;
   }
