@@ -1056,7 +1056,7 @@ body:has(.header) {
     width: 200px;
   }
   .search_group {
-    margin-top: 32px !important;
+    margin-top: 32px;
   }
 }
 @media (max-width: 991px) {
@@ -1110,9 +1110,9 @@ body:has(.header) {
   .main_footer_copyright span {
     font-size: 9px;
   }
-  .search_group {
+  /* .search_group {
     margin-top: 16px;
-  }
+  } */
   .search_group .form-control {
     padding-inline-start: 56px;
   }
@@ -1498,7 +1498,7 @@ body:has(.header) {
   .Yasir_logo {
     padding-inline-start: 42px;
   }
-  .login .Yasir_logo{
+  .login .Yasir_logo {
     padding-inline-start: 0;
   }
   .menu-icon {
