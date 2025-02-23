@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="366" height="452.09" viewBox="0 0 366 452.09">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.121" y1="0.036" x2="0.951" y2="0.98" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ebe8e2"/>
+      <stop offset="1" stop-color="#eeede7"/>
+    </linearGradient>
+  </defs>
+  <path id="Card-3" d="M27,0H85.3c26.148,0,23.374,29.469,66.562,29.469h65.772C250.626,29.469,253.353,0,281.452,0H339a27,27,0,0,1,27,27V417c0,25.693-11.547,35.09-34.761,35.09L27,452A27,27,0,0,1,0,425V27A27,27,0,0,1,27,0Z" fill="url(#linear-gradient)"/>
+</svg>

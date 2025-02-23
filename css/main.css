@@ -512,7 +512,7 @@ body:has(.header) {
 }
 .blue_card {
   color: var(--white-color);
-  background-image: url("../images/Card_1.png");
+  background-image: url("../images/Card_01_Color_BG.svg");
   border-radius: 20px 20px 138px 20px;
 }
 .hero_card.blue_card .card_text p,
@@ -586,7 +586,7 @@ body:has(.header) {
     #c6b8a5 0%,
     #efede7 100%
   ); */
-  background-image: url("../images/Card_2.png");
+  background-image: url("../images/Card_bage.svg");
 
   border-radius: 20px 20px 20px 20px;
 }
@@ -596,7 +596,7 @@ body:has(.header) {
     #eae7e1 0%,
     #f0eee9 100%
   ); */
-  background-image: url("../images/Card_3.png");
+  background-image: url("../images/Card-3.svg");
   border-radius: 20px 20px 20px 20px;
 }
 .fourth_card {
@@ -605,7 +605,7 @@ body:has(.header) {
     #c7d9e4 0%,
     #e9edf4 100%
   ); */
-  background-image: url("../images/Card_4.png");
+  background-image: url("../images/Card_4.svg");
   border-radius: 20px 20px 20px 138px;
 }
 .card_text {
