@@ -198,6 +198,7 @@ li {
   justify-content: center;
   z-index: 3000;
   top: 45px;
+  transition: all 0.3s ease-in-out;
 }
 .menu-icon.moveToTop {
   top: 40px;
@@ -283,7 +284,7 @@ li {
   font-size: 13px;
 }
 footer .main_footer_copyright {
-  color: var(--text-alt-color);
+  color: #3f6272;
 }
 .heart {
   margin-inline: 4px;
@@ -396,7 +397,7 @@ footer .main_footer_copyright {
   inset-inline-start: 0;
   height: 127px;
   z-index: 1000;
-  /* transition: all 0.3s ease-in-out; */
+  transition: all 0.3s ease-in-out;
 }
 .header.scrolled {
   background: rgba(255, 255, 255, 0.91);
