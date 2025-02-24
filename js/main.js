@@ -8,7 +8,7 @@
 
 window.addEventListener("scroll", function () {
   let header = document.querySelector(".header");
-  let menu_icon = document.querySelector(".menu-icon");
+  let menu_icon = document.querySelector(".menu_icon_container");
   if (window.scrollY > 32) {
     menu_icon.classList.add("moveToTop");
     header.classList.add("scrolled");
