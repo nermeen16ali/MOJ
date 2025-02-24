@@ -195,6 +195,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .menu_icon_container {
   position: fixed;
@@ -240,6 +241,7 @@ li {
 }
 .menu-icon:not(.active):after {
   width: 30px;
+  inset-inline-start: 0;
 }
 .menu-icon::before {
   /* top: -4px; */
@@ -414,6 +416,7 @@ footer .main_footer_copyright {
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   height: 117px;
+  z-index: 100000;
   /* opacity: 0.91; */
 }
 /* .header {
