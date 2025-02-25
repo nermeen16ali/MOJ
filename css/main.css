@@ -203,6 +203,10 @@ li {
   top: 45px;
   transition: all 0.3s ease-in-out;
   width: 100%;
+  height: 0;
+}
+.menu_icon_container .container-fluid{
+  height: 0;
 }
 .menu_icon_container.moveToTop {
   top: 40px;
@@ -416,7 +420,6 @@ footer .main_footer_copyright {
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   height: 117px;
-  z-index: 100000;
   /* opacity: 0.91; */
 }
 /* .header {
