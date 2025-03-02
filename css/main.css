@@ -684,10 +684,11 @@ body:has(.header) {
 .services .nav-link svg g {
   display: contents;
 }
-.services .nav-link:not(:first-child):not(.active) svg path{
+.services .nav-link:not(.active):not(.solved_svg) svg path {
+  fill: #c2cce5;
   stroke:1px #c2cce5;
 }
-.services .nav-link:not(.active) svg path {
+.services .nav-link.solved_svg:not(.active) svg path{
   fill: #c2cce5;
   stroke: #c2cce5;
 }
@@ -696,10 +697,8 @@ body:has(.header) {
   background-color: transparent;
   position: relative;
 }
-.services .nav-link.active svg path{
+.services .nav-link.active:not(.solved_svg) svg path {
   fill: var(--main-dark-color);
-}
-.services .nav-link:not(:first-child).active svg path {
   stroke:1px var(--main-dark-color);
 }
 .services .nav-link.active::after {
