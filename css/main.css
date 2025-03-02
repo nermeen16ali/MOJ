@@ -37,17 +37,6 @@ ul {
     #c2cce5 13.18%,
     #22499d 74.81%
   );
-  --blend-mode-lighten: lighten;
-  --bg-radial-gradient-1: radial-gradient(
-    73.4% 132.85% at 95.7% 162.46%,
-    rgba(174, 158, 121, 0.431) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  --bg-radial-gradient-2: radial-gradient(
-    70.8% 139.26% at 100% 224.7%,
-    #a0b6be 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
   --font-size-heading-1: 75px;
   --font-size-heading-2: 61px;
   --font-size-heading-4-01: 35px;
