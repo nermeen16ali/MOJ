@@ -686,7 +686,7 @@ body:has(.header) {
 }
 .services .nav-link:not(.active) svg path {
   fill: #c2cce5;
-  stroke: #c2cce5;
+  stroke:1px #c2cce5;
 }
 .services .nav-link.active {
   color: var(--main-dark-color);
