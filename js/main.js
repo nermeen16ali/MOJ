@@ -1,11 +1,3 @@
-// function openMenu() {
-//   document.body.classList.add("no-scroll");
-// }
-
-// function closeMenu() {
-//   document.body.classList.remove("no-scroll");
-// }
-
 window.addEventListener("scroll", function () {
   let header = document.querySelector(".header");
   let menu_icon = document.querySelector(".menu_icon_container");
@@ -17,46 +9,23 @@ window.addEventListener("scroll", function () {
     header.classList.remove("scrolled");
   }
 });
+document.querySelector(".learn_more").addEventListener("click", function (e) {
+  e.preventDefault();
+  window.scrollBy({
+    top: window.innerHeight / 30,
+    left: 0,
+    behavior: "smooth",
+  });
+});
 
-// window.addEventListener("scroll", function () {
-//   let header = document.querySelector(".header");
-//   let menu_icon = document.querySelector(".menu-icon");
-
-//   let scrollThreshold = window.innerWidth <= 992 ? 32 : 32;
-
-//   if (window.scrollY > scrollThreshold) {
-//     menu_icon.classList.add("moveToTop");
-//     header.classList.add("scrolled");
-//   } else {
-//     menu_icon.classList.remove("moveToTop");
-//     header.classList.remove("scrolled");
-//   }
-// });
-
-// const openMenuBtn = document.getElementById("openMenuBtn");
-// const closeMenuBtn = document.getElementById("closeMenuBtn");
-// const menu = document.getElementById("menu");
-
-// function openMenu() {
-//   menu.classList.add("active");
-//   document.body.classList.add("no-scroll");
-// }
-
-// function closeMenu() {
-//   menu.classList.remove("active");
-//   document.body.classList.remove("no-scroll");
-// }
-
-// openMenuBtn.addEventListener("click", openMenu);
-// closeMenuBtn.addEventListener("click", closeMenu);
 
 const menuToggle = document.getElementById("menuToggle");
 const menu = document.getElementById("menu");
 
 menuToggle.addEventListener("click", function () {
-  menu.classList.toggle("active"); // فتح وإغلاق القائمة
-  menuToggle.classList.toggle("active"); // تغيير الأيقونة
-  document.body.classList.toggle("no-scroll"); // منع التمرير عند الفتح
+  menu.classList.toggle("active"); 
+  menuToggle.classList.toggle("active");
+  document.body.classList.toggle("no-scroll");
 });
 
 const createOdometer = (el, value) => {
