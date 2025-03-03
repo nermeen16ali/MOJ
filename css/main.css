@@ -686,9 +686,9 @@ body:has(.header) {
 }
 .services .nav-link:not(.active):not(.solved_svg) svg path {
   fill: #c2cce5;
-  stroke:1px #c2cce5;
+  stroke: 1px #c2cce5;
 }
-.services .nav-link.solved_svg:not(.active) svg path{
+.services .nav-link.solved_svg:not(.active) svg path {
   fill: #c2cce5;
   stroke: #c2cce5;
 }
@@ -699,7 +699,7 @@ body:has(.header) {
 }
 .services .nav-link.active:not(.solved_svg) svg path {
   fill: var(--main-dark-color);
-  stroke:1px var(--main-dark-color);
+  stroke: 1px var(--main-dark-color);
 }
 .services .nav-link.active::after {
   position: absolute;
@@ -1829,14 +1829,21 @@ body:has(.header) {
   .statistics {
     background-position: bottom;
   }
-  .login main {
-    margin-top: 30%;
+  .login main{
+    height: calc(100vh - 252px);
+    padding-top: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .download .download_text {
     padding-top: 650px;
   }
 }
 @media (min-width: 2000px) {
+  .download {
+    margin-top: -405px;
+  }
   .download .img-container {
     left: 12%;
   }
@@ -1844,5 +1851,10 @@ body:has(.header) {
 @media (min-width: 2560px) {
   .download .img-container {
     left: 20%;
+  }
+}
+@media (min-width:3000px) {
+  .download .img-container {
+    left: 23%;
   }
 }
