@@ -959,6 +959,7 @@ body:has(.header) {
   margin-right: auto;
   background-image: url(../images/non_collapsed_btn_icon.svg);
   margin-top: -10px;
+  transform: rotate(0);
 }
 .odometer {
   direction: ltr;
@@ -1712,7 +1713,6 @@ body:has(.header) {
   }
   .accordion-button:not(.collapsed)::after {
     background: none;
-    transform: rotate(0);
     transform: translateY(-50%);
     inset-inline-end: 42px;
     background: none;
@@ -1777,7 +1777,6 @@ body:has(.header) {
   }
   .accordion-button:not(.collapsed)::after {
     background: none;
-    transform: rotate(0);
     transform: translateY(-50%);
     inset-inline-end: 42px;
     background: none;
