@@ -1796,20 +1796,25 @@ body:has(.header) {
     padding-top: 16px;
   }
   .download {
-    margin-top: -260px;
+    margin-top: -210px;
   }
   .download .download_text {
     max-width: 634px;
     padding-top: 460px;
-  }
-  .outer_hero_card .hover_shadow {
-    bottom: -80px;
   }
   .inner_hero_card:hover + .hover_shadow {
     bottom: -90px;
   }
   .download .img-container {
     left: 6%;
+  }
+}
+@media (min-width: 1900px) {
+  .download {
+    margin-top: -260px;
+  }
+  .outer_hero_card .hover_shadow {
+    bottom: -80px;
   }
   .download .img-container img {
     max-width: unset;
@@ -1829,7 +1834,7 @@ body:has(.header) {
   .statistics {
     background-position: bottom;
   }
-  .login main{
+  .login main {
     height: calc(100vh - 252px);
     padding-top: unset;
     display: flex;
@@ -1842,7 +1847,7 @@ body:has(.header) {
 }
 @media (min-width: 2000px) {
   .download {
-    margin-top: -405px;
+    margin-top: -305px;
   }
   .download .img-container {
     left: 12%;
@@ -1853,7 +1858,12 @@ body:has(.header) {
     left: 20%;
   }
 }
-@media (min-width:3000px) {
+@media (min-width: 2600px) {
+  .download {
+    margin-top: -405px;
+  }
+}
+@media (min-width: 3000px) {
   .download .img-container {
     left: 23%;
   }
