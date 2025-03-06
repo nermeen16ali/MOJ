@@ -3313,3 +3313,8 @@ body:has(.header) {
     left: 23%;
   }
 }
+@media (min-width: 3350px) {
+  .download {
+    margin-top: -450px;
+  }
+}
