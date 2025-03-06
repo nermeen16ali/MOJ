@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18.815" height="10.453" viewBox="0 0 18.815 10.453">
+  <g id="Arrow_Down" transform="translate(18.815 10.453) rotate(180)">
+    <path id="Path_87587" data-name="Path 87587" d="M13.563,9.109l-1.126,1.126a.745.745,0,0,1-1.054,0L4.148,3,2.179,4.967a.744.744,0,0,1-1.053,0L0,3.841,3.622.218a.744.744,0,0,1,1.053,0L5.8,1.345h0Z" transform="translate(5.252 0)" fill="#13359a" opacity="0.469"/>
+    <path id="Path_87588" data-name="Path 87588" d="M0,9.109l1.126,1.126a.745.745,0,0,0,1.054,0L9.416,3l1.968,1.968a.744.744,0,0,0,1.053,0l1.127-1.127L9.941.218a.744.744,0,0,0-1.053,0L7.762,1.345h0Z" transform="translate(0 0)" fill="#13359a"/>
+  </g>
+</svg>

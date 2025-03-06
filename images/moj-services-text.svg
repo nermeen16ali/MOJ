@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="115" height="25.771" viewBox="0 0 115 25.771">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.843" y1="0.103" x2="0.188" y2="0.675" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#c2cce5"/>
+      <stop offset="1" stop-color="#22499d"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_109419" data-name="Group 109419" transform="translate(-1453 -171)">
+    <text id="خدمات_القضاة" data-name="خدمات القضاة" transform="translate(1512 188)" fill="#1b3065" font-size="17" font-family="Readex Pro" font-weight="500"><tspan x="-55" y="0">خدمات القضاة</tspan></text>
+    <path id="Path_83633" data-name="Path 83633" d="M0,0H57.467V21.947H0Z" transform="translate(1457.332 171.362)" fill="url(#linear-gradient)" style="mix-blend-mode: lighten;isolation: isolate"/>
+    <path id="Yasir_Text_Highlight" d="M0,3.462A407.543,407.543,0,0,1,44.3.044C44.963.038,48.335,0,48.931,0c1.705.026,3.86.026,5.564.071.678.022,3.909.137,4.637.162a.547.547,0,1,1-.063,1.091l-4.609-.246C52.766,1,50.62.962,48.923.905,48.351.9,44.955.87,44.3.864A407.1,407.1,0,0,0,0,3.462" transform="translate(1453 193.31)" fill="#b39d74"/>
+  </g>
+</svg>

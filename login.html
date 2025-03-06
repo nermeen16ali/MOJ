@@ -6,8 +6,9 @@
         <link rel="shortcut icon" href="images/Yasir_Logo_Horizontal.svg" />
         <title>منصة يَسِّر</title>
         <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
             rel="stylesheet">
+
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
             rel="stylesheet">
@@ -25,11 +26,11 @@
                         <img src="images/back-arrow.svg" alt>
                         <span>عودة إلى المنصة</span>
                     </a>
-                    <span class="Yasir_logo img-container">
+                    <a href="index.html" class="Yasir_logo img-container">
                         <img src="images/Yasir_Logo_Horizontal.svg"
                             class="img-fluid"
                             alt="Yasir Logo">
-                    </span>
+                    </a>
                 </div>
                 <div>
                     <span class="Moj_logo img-container">
@@ -107,17 +108,24 @@
                                 </svg>
                             </a>
                         </div>
-
-                        <button type="submit"
-                            class="main_btn main_lg_btn">
-                            <span>دخول</span>
-                            <!-- code -->
-                            <lottie-player src="js/login.json"
-                                background="transparent" speed="1"
-                                style="width: 72px; height: 72px;" loop
-                                autoplay></lottie-player>
-                        </button>
                     </form>
+                    <button
+                        class="main_btn main_lg_btn" data-bs-toggle="modal"
+                        data-bs-target="#mainModal">
+                        <span>دخول</span>
+                        <lottie-player src="js/login.json"
+                            background="transparent" speed="1"
+                            style="width: 72px; height: 72px;" loop
+                            autoplay></lottie-player>
+                    </button>
+                    <!-- <button type="button"
+                        class="main_btn main_lg_btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        دخول
+                        <img src="images/login-btn-animation.gif"
+                            alt="login animation icon " />
+                    </button> -->
                 </div>
             </main>
 
@@ -138,25 +146,160 @@
         <div class="chat_button">
             <img src="images/Chat_Icon.svg" alt="Chat">
         </div>
+        <!-- Main Modal -->
+        <div class="modal fade main_modal" id="mainModal" tabindex="-1"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered main_modal">
+                <div class="modal-content">
+                    <div
+                        class="d-flex justify-content-between align-items-center modal_btns">
+                        <button type="button"
+                            class="reset_btn_css btn-modal-back"
+                            data-bs-dismiss="modal"
+                            aria-label="Close">
+                            <img
+                                src="images/back-arrow.svg" />
+                            <span>رجوع</span>
+                        </button>
+                        <button type="button" class="reset_btn_css close-all"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"><img
+                                src="images/modal-close-icon.svg"
+                                alt></button>
+                    </div>
+                    <div class="modal-body d-lg-flex main_login_modal">
+                        <div class="main_login_modal_text">
+                            <img
+                                src="images/modal-Yasir-logo.svg" class="d-none d-md-block"/>
+                            <h3>تسجيل الدخول</h3>
+                            <p>يُرجى إختيار طريقة
+                                التحقق لإكمال تسجيل الدخول</p>
+                        </div>
+                        <div class="d-flex">
+                            <button type="button"
+                                class="popup-tab-btn reset_btn_css hid_verify_btn"
+                                data-bs-toggle="modal"
+                                data-bs-target="#choice2Modal">
+                                <img src="images/HID-Icon.svg" alt />
+                                <p>التحقق بواسطة <br>تطبيق هويتي</p>
+                            </button>
+                            <button type="button"
+                                class="popup-tab-btn reset_btn_css google_verify_btn"
+                                data-bs-toggle="modal"
+                                data-bs-target="#choice1Modal">
+                                <img src="images/Google-Icon.svg" alt />
+                                <p>التحقق بواسطة <br><span class="d-none d-md-inline-block">Authenticator</span> Google</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- HID Modal -->
+        <div class="modal fade hid_model" id="choice2Modal" tabindex="-1"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div
+                        class="d-flex justify-content-between align-items-center modal_btns">
+                        <button class="reset_btn_css btn-modal-back"
+                            data-bs-target="#mainModal"
+                            data-bs-toggle="modal"> <img
+                                src="images/back-arrow.svg" />
+                            <span>رجوع</span></button>
+                        <button type="button"
+                            class="close-all reset_btn_css"
+                            aria-label="Close"><img
+                                src="images/modal-close-icon.svg"
+                                alt></button>
+                    </div>
+                    <div class="modal-body choice_body">
+
+                        <h4>
+                            <img src="images/hid-sm-icon.svg"
+                                class="verification_google_icon" alt>
+                            التحقق بواسطة تطبيق هويتي
+                        </h4>
+                        <div
+                            class="d-flex align-items-center justify-content-between">
+                            <p class="verification_text">تم إرسال طلب مصادقة إلى
+                                <span>تطبيق <br>هويتي</span> يُرجى الموافقة
+                            </p>
+                            <div class="lotiffy"></div>
+                        </div>
+                        <img src="images/HID-Mobile.png" class="hip_img" alt>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Google Modal -->
+        <div class="modal fade google_verification_model" id="choice1Modal"
+            tabindex="-1"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div
+                        class="d-flex justify-content-between align-items-center modal_btns">
+                        <button class="reset_btn_css btn-modal-back"
+                            data-bs-target="#mainModal"
+                            data-bs-toggle="modal"> <img
+                                src="images/back-arrow.svg" />
+                            <span>رجوع</span></button>
+                        <button type="button"
+                            class="reset_btn_css close-all"
+                            aria-label="Close"><img
+                                src="images/modal-close-icon.svg"
+                                alt></button>
+                    </div>
+                    <div class="modal-body choice_body">
+                        <img src="images/Google-Icon-verification.svg"
+                            class="verification_google_icon" alt>
+                        <h4> <img src="images/hid-sm-icon.svg"
+                                class="verification_google_icon" alt>التحقق
+                            بواسطة جوجل</h4>
+                        <div
+                            class="d-flex align-items-center justify-content-between">
+                            <p class="verification_text">يُرجى إدخال الكود الذي
+                                تم
+                                إرساله على <br><span>Google
+                                    Authenticator</span></p>
+                            <div class="lotiffy"></div>
+                        </div>
+                        <div class="otp-container" dir="ltr">
+                            <div class="otp-box"><input type="text"
+                                    inputmode="numeric" pattern="[0-9]*"
+                                    maxlength="1" class="otp-input form-control"
+                                    placeholder="0"></div>
+                            <div class="otp-box"><input type="text"
+                                    inputmode="numeric" pattern="[0-9]*"
+                                    maxlength="1" class="otp-input form-control"
+                                    placeholder="0"></div>
+                            <div class="otp-box"><input type="text"
+                                    inputmode="numeric" pattern="[0-9]*"
+                                    maxlength="1" class="otp-input form-control"
+                                    placeholder="0"></div>
+                            <div class="otp-box"><input type="text"
+                                    inputmode="numeric" pattern="[0-9]*"
+                                    maxlength="1" class="otp-input form-control"
+                                    placeholder="0"></div>
+                            <div class="otp-box"><input type="text"
+                                    inputmode="numeric" pattern="[0-9]*"
+                                    maxlength="1" class="otp-input form-control"
+                                    placeholder="0"></div>
+                            <div class="otp-box"><input type="text"
+                                    inputmode="numeric" pattern="[0-9]*"
+                                    maxlength="1" class="otp-input form-control"
+                                    placeholder="0"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-            const togglePassword = document.getElementById("togglePassword");
-            const passwordField = document.getElementById("password");
-            const toggleIcon = togglePassword.querySelector("img");
-
-            togglePassword.addEventListener("click", function () {
-                const isPassword = passwordField.type === "password";
-                passwordField.type = isPassword ? "text" : "password";
-
-                toggleIcon.src = isPassword
-                ? "images/password_toggle.svg"
-                : "images/password_toggle.svg";
-                toggleIcon.alt = isPassword ? "Hide Password" : "Show Password";
-            });
-            });
-        </script>
+        <script src="js/login.js"></script>
     </body>
 </html>

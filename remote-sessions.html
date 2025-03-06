@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/Yasir_Logo_Horizontal.svg" />
+        <title>منصة يَسِّر</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+            rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+        <div class="inner-page">
+            <header>
+                <div class="header--inner">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="logocontainer text-center">
+                                    <a href="index.html"><img
+                                            src="images/Yasir_Logo_SVG.svg"
+                                            alt="logo"
+                                            class="remote_sessions_Yasir_logo" /></a>
+                                    <h5>خدمات <span class="highlighted_text">
+                                            القضاة
+                                            <img
+                                                src="images/Yasir-Text-Highlight-services-line.svg"
+                                                alt="Yasir Text Highlight">
+                                        </span></h5>
+
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="header__layout">
+                                    <div class="dropdown c-dropdown">
+                                        <a class=" dropdown-toggle" href="#"
+                                            role="button" id="dropdownMenuLink"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <div class="d-flex">
+                                                <img class="c-dropdown__img"
+                                                    src="images/User-Img.png"
+                                                    alt srcset />
+                                                <div>
+                                                    <div class="judge_name">
+                                                        <span
+                                                            class="c-text-light">مرحبا</span>
+                                                        <span>محمد خالد</span>
+                                                    </div>
+                                                    <div>
+                                                        <span
+                                                            class="c-dropdown__title">رئيس
+                                                            القضاة</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <ul class="dropdown-menu"
+                                            aria-labelledby="dropdownMenuLink">
+                                            <li><a class="dropdown-item"
+                                                    href="#">1</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="#">1</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="#">1</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="notificatio-profile">
+                                        <div class="notifiction">
+                                            <button>
+                                                <img
+                                                    src="images/Notification-Icon.svg"
+                                                    alt srcset />
+                                                <span
+                                                    class="noti-count">١</span>
+                                            </button>
+                                        </div>
+                                        <a href="login.html" class="logout reset_btn_css">
+                                            <span class>تسجيل خروج</span>
+                                            <img
+                                                src="images/Logout.svg" />
+                                        </a>
+                                        <button class="switch_btn"
+                                            id="directionSwitch"> English
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <div class="main-sec">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xl-3 mb-3">
+                                <!-- menu -->
+                                <ul class="page-menu">
+                                    <li class="item active">
+                                        <a href="#">
+                                            <div class="icon">
+                                                <img
+                                                    src="images/sessions-icon.svg"
+                                                    alt />
+                                            </div>
+                                            <div class="list-title">
+                                                <h6>تحضير
+                                                    الجلسات</h6>
+                                                <span>عرض جميع
+                                                    الدوائر</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">
+                                            <div class="icon">
+                                                <img
+                                                    src="images/calculator-icon.svg"
+                                                    alt />
+                                            </div>
+                                            <div class="list-title">
+                                                <h6>الحاسبة
+                                                    العمالية</h6>
+                                                <span>حساب
+                                                    المستحقات</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">
+                                            <div class="icon">
+                                                <img
+                                                    src="images/Search_Icon.svg"
+                                                    alt />
+                                            </div>
+                                            <div class="list-title">
+                                                <h6>بحث</h6>
+                                                <span>الأحكام
+                                                    والإصدارات والتشريعات</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- menu -->
+                            </div>
+                            <div class="col-xl-9">
+                                <!-- search result -->
+                                <div class="search_result">
+                                    <h3>الدوائر</h3>
+
+                                    <div class="search_group w-100">
+                                        <img src="images/dark-search.svg"
+                                            class="search_icon" alt="search">
+                                        <input type="text" class="form-control"
+                                            placeholder="بحث سريع، يُرجى كتابة أي كلمة هنا…">
+                                    </div>
+
+                                    <div class="table-container">
+                                        <table class="table table--edit">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">المحكمة</th>
+                                                    <th scope="col">نوع
+                                                        الدائرة</th>
+                                                    <th scope="col">رقم
+                                                        الدائرة</th>
+                                                    <th scope="col">يوم
+                                                        الإنعقاد</th>
+                                                    <th scope="col">مؤشر
+                                                        الإنجاز</th>
+                                                    <th scope="col">الإجراء</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><span>المحكمة
+                                                            الكلية</span></td>
+                                                    <td><span>إداري</span></td>
+                                                    <td><span>08</span></td>
+                                                    <td><span>الأربعاء</span></td>
+                                                    <td
+                                                        class="c-table__indicator--up">
+                                                        <img
+                                                            src="images/positive-session-icon.svg"
+                                                            alt="img"
+                                                            class="session_status_icon" /><span>75%</span>
+                                                    </td>
+                                                    <td>
+                                                        <button
+                                                            class="view_btn main_btn"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#staticBackdrop">
+                                                            <img
+                                                                src="images/view-icon-eyes.svg"
+                                                                alt="img" />
+                                                            <label>عرض
+                                                            </label>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>المحكمة
+                                                            الكلية</span></td>
+                                                    <td><span>إداري</span></td>
+                                                    <td><span>08</span></td>
+                                                    <td><span>الأربعاء</span></td>
+                                                    <td
+                                                        class="c-table__indicator--down">
+                                                        <img
+                                                            src="images/negative-session-icon.svg"
+                                                            alt="img"
+                                                            class="session_status_icon" /><span>15%</span>
+                                                    </td>
+                                                    <td>
+                                                        <button
+                                                            class="view_btn main_btn"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#indecator_negative">
+                                                            <img
+                                                                src="images/view-icon-eyes.svg"
+                                                                alt="img" /><label>عرض
+                                                            </label>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>المحكمة
+                                                            الكلية</span></td>
+                                                    <td><span>إداري</span></td>
+                                                    <td><span>08</span></td>
+                                                    <td><span>الأربعاء</span></td>
+                                                    <td
+                                                        class="c-table__indicator--up">
+                                                        <img
+                                                            src="images/positive-session-icon.svg"
+                                                            alt="img"
+                                                            class="session_status_icon" /><span>75%</span>
+                                                    </td>
+                                                    <td>
+                                                        <button
+                                                            class="view_btn main_btn"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#staticBackdrop">
+                                                            <img
+                                                                src="images/view-icon-eyes.svg"
+                                                                alt="img" />
+                                                            <label>عرض
+                                                            </label>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>المحكمة
+                                                            الكلية</span></td>
+                                                    <td><span>إداري</span></td>
+                                                    <td><span>08</span></td>
+                                                    <td><span>الأربعاء</span></td>
+                                                    <td
+                                                        class="c-table__indicator--down">
+                                                        <img
+                                                            src="images/negative-session-icon.svg"
+                                                            alt="img"
+                                                            class="session_status_icon" /><span>15%</span>
+                                                    </td>
+                                                    <td>
+                                                        <button
+                                                            class="view_btn main_btn"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#staticBackdrop">
+                                                            <img
+                                                                src="images/view-icon-eyes.svg"
+                                                                alt="img" />
+                                                            <label>عرض
+                                                            </label>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                                <!-- // search result -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer class="text-center none_bg_footer">
+                <p class="main_footer_copyright">
+                    جميع الحقوق محفوظة لـ منصة يَسِّر &copy; 2025
+                    <br>
+                    <span>
+                        صُنع بـ <img src="images/Heart.svg" alt="Heart"
+                            class="heart">في إدارة تطوير النظم -
+                        وزارة العدل
+                    </span>
+                </p>
+            </footer>
+            <!-- Modal  indecator positve-->
+            <div class="modal fade modal--edit" id="staticBackdrop"
+                data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered c-modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body c-modal-body">
+                            <button type="button" class="btn-close c-btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            <ul class="nav nav-pills nav-pills--edit mb-3"
+                                id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active"
+                                        id="pills-home-tab"
+                                        data-bs-toggle="pill"
+                                        data-bs-target="#pills-home"
+                                        type="button" role="tab"
+                                        aria-controls="pills-home"
+                                        aria-selected="true">
+                                        <img src="images/Sessions_Icon.svg"
+                                            alt="img" />
+                                        <span>جلسات الدائرة</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link"
+                                        id="pills-profile-tab"
+                                        data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile"
+                                        type="button" role="tab"
+                                        aria-controls="pills-profile"
+                                        aria-selected="false">
+                                        <img src="images/Assign_Icon.svg"
+                                            alt="img" />
+                                        <span>توزيع الأحكام</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link"
+                                        id="pills-contact-tab"
+                                        data-bs-toggle="pill"
+                                        data-bs-target="#pills-contact"
+                                        type="button" role="tab"
+                                        aria-controls="pills-contact"
+                                        aria-selected="false">
+                                        <img src="images/Updated_Icon.svg"
+                                            alt="img" />
+                                        <span>الأحكام المعدلة</span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tab-content tab-content--edit"
+                                id="pills-tabContent">
+                                <div class="tab-pane fade show active"
+                                    id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab"
+                                    tabindex="0">
+                                    <div class="modal__tap-pan-top">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="head-line">
+                                                    <span
+                                                        class="head-title head-title--blue mb-2">بيانات
+                                                        الدائرة</span>
+                                                </div>
+                                                <div class>
+                                                    <table class="table-2">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>المحكمة</th>
+                                                                <th>نوع
+                                                                    الدائرة</th>
+                                                                <th>رقم
+                                                                    الدائرة</th>
+                                                                <th>يوم
+                                                                    الإنعقاد</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>المحكمة
+                                                                    الكلية</td>
+                                                                <td>إيجارات
+                                                                    كلي</td>
+                                                                <td>09</td>
+                                                                <td>الأربعاء</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="col md-7">
+                                                <div class="indicator">
+                                                    <div class="row">
+                                                        <div
+                                                            class="col-9 overflow-auto">
+                                                            <table
+                                                                class="table-3">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>
+                                                                            <h6>المتداول</h6>
+                                                                            <span>يوم
+                                                                                1
+                                                                                أكتوبر</span>
+                                                                        </th>
+                                                                        <th>
+                                                                            <h6>الجديدة</h6>
+                                                                            <span>من
+                                                                                1
+                                                                                أكتوبر</span>
+                                                                        </th>
+                                                                        <th>
+                                                                            <h6>المحالة</h6>
+                                                                            <span>من
+                                                                                1
+                                                                                أكتوبر</span>
+                                                                        </th>
+                                                                        <th>
+                                                                            <h6>القطعية</h6>
+                                                                            <span>من
+                                                                                1
+                                                                                أكتوبر</span>
+                                                                        </th>
+                                                                        <th
+                                                                            rowspan="1">
+                                                                            <h6>المتداول
+                                                                                الحالي</h6>
+                                                                        </th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <h4>76</h4>
+                                                                        </td>
+                                                                        <td>
+                                                                            <h4>11</h4>
+                                                                        </td>
+                                                                        <td>
+                                                                            <h4>0</h4>
+                                                                        </td>
+                                                                        <td>
+                                                                            <h4>3</h4>
+                                                                        </td>
+                                                                        <td
+                                                                            class="text-center">
+                                                                            <h2
+                                                                                class="h1">73</h2>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+
+                                                        <div class="col-3">
+                                                            <div
+                                                                class="indicator__boxbrsent text-center">
+                                                                <h6>مؤشر
+                                                                    الإنجاز</h6>
+                                                                <img
+                                                                    src="images/positive-session-icon.svg"
+                                                                    alt
+                                                                    srcset />
+                                                                <div
+                                                                    class="indicator__brsent h2 mt-2">75%</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-ofblue table-bg-blue mt-4">
+                                        <div class="table-container">
+                                            <table
+                                                class="table table--edit table-4">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">م</th>
+                                                        <th scope="col">تاريخ
+                                                            الجلسة</th>
+                                                        <th scope="col">
+                                                            <div
+                                                                class="c-text-blue">متداولة</div>
+                                                            <div
+                                                                class="c-th-text-low c-text-blue">
+                                                                الإجمالي
+                                                            </div>
+                                                        </th>
+                                                        <th
+                                                            scope="col">مؤجلة</th>
+                                                        <th
+                                                            scope="col">جديدة</th>
+                                                        <th
+                                                            scope="col">محالة</th>
+                                                        <th scope="col">
+                                                            <div
+                                                                class="c-text-black">الأحكام</div>
+                                                            <div
+                                                                class="c-th-text-low c-text-black">
+                                                                الإجمالي
+                                                            </div>
+                                                        </th>
+                                                        <th
+                                                            scope="col">محجوزة</th>
+                                                        <th scope="col">مد
+                                                            أجل</th>
+                                                        <th
+                                                            scope="col">الإجراء</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span>1</span></td>
+                                                        <td><span>2025-02-05</span></td>
+                                                        <td>
+                                                            <span
+                                                                class="c-text-blue c-text-f-up">17</span>
+                                                        </td>
+                                                        <td><span>22</span></td>
+                                                        <td><span>4</span></td>
+                                                        <td><span>0</span></td>
+                                                        <td>
+                                                            <span
+                                                                class="c-text-black c-text-f-up">12</span>
+                                                        </td>
+                                                        <td><span>2</span></td>
+                                                        <td><span>0</span></td>
+
+                                                        <td>
+                                                            <button
+                                                                class="btn view_btn form-control-inbtn px-4"
+                                                                type="button "
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#staticBackdrop">
+                                                                <img
+                                                                    src="images/Group 96954.svg"
+                                                                    alt="img" /><span>عرض
+                                                                    الجلسات
+                                                                </span>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span>1</span></td>
+                                                        <td><span>2025-02-05</span></td>
+                                                        <td>
+                                                            <span
+                                                                class="c-text-blue c-text-f-up">17</span>
+                                                        </td>
+                                                        <td><span>22</span></td>
+                                                        <td><span>4</span></td>
+                                                        <td><span>0</span></td>
+                                                        <td>
+                                                            <span
+                                                                class="c-text-black c-text-f-up">12</span>
+                                                        </td>
+                                                        <td><span>2</span></td>
+                                                        <td><span>0</span></td>
+
+                                                        <td>
+                                                            <button
+                                                                class="btn view_btn form-control-inbtn px-4"
+                                                                type="button "
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#staticBackdrop">
+                                                                <img
+                                                                    src="images/Group 96954.svg"
+                                                                    alt="img" /><span>عرض
+                                                                    الجلسات
+                                                                </span>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span>1</span></td>
+                                                        <td><span>2025-02-05</span></td>
+                                                        <td>
+                                                            <span
+                                                                class="c-text-blue c-text-f-up">17</span>
+                                                        </td>
+                                                        <td><span>22</span></td>
+                                                        <td><span>4</span></td>
+                                                        <td><span>0</span></td>
+                                                        <td>
+                                                            <span
+                                                                class="c-text-black c-text-f-up">12</span>
+                                                        </td>
+                                                        <td><span>2</span></td>
+                                                        <td><span>0</span></td>
+
+                                                        <td>
+                                                            <button
+                                                                class="btn view_btn form-control-inbtn px-4"
+                                                                type="button "
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#staticBackdrop">
+                                                                <img
+                                                                    src="images/Group 96954.svg"
+                                                                    alt="img" /><span>عرض
+                                                                    الجلسات
+                                                                </span>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile"
+                                    role="tabpanel"
+                                    aria-labelledby="pills-profile-tab"
+                                    tabindex="0"></div>
+                                <div class="tab-pane fade" id="pills-contact"
+                                    role="tabpanel"
+                                    aria-labelledby="pills-contact-tab"
+                                    tabindex="0">
+                                    <h3>لا يوجد بيانات</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // Modal -->
+            <!-- Modal  -->
+            <div class="modal fade modal--edit" id="indecator_negative"
+                data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered c-modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body c-modal-body">
+                            <button type="button" class="btn-close c-btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            <ul class="nav nav-pills nav-pills--edit mb-3"
+                                id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active"
+                                        id="pills-home-tab"
+                                        data-bs-toggle="pill"
+                                        data-bs-target="#pills-home"
+                                        type="button" role="tab"
+                                        aria-controls="pills-home"
+                                        aria-selected="true">
+                                        <img src="images/Sessions_Icon.svg"
+                                            alt="img" />
+                                        <span>جلسات الدائرة</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link"
+                                        id="pills-profile-tab"
+                                        data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile"
+                                        type="button" role="tab"
+                                        aria-controls="pills-profile"
+                                        aria-selected="false">
+                                        <img src="images/Assign_Icon.svg"
+                                            alt="img" />
+                                        <span>توزيع الأحكام</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link"
+                                        id="pills-contact-tab"
+                                        data-bs-toggle="pill"
+                                        data-bs-target="#pills-contact"
+                                        type="button" role="tab"
+                                        aria-controls="pills-contact"
+                                        aria-selected="false">
+                                        <img src="images/Updated_Icon.svg"
+                                            alt="img" />
+                                        <span>الأحكام المعدلة</span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tab-content tab-content--edit"
+                                id="pills-tabContent">
+                                <div class="tab-pane fade show active"
+                                    id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab"
+                                    tabindex="0">
+                                    <div class="modal__tap-pan-top">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="head-line">
+                                                    <span
+                                                        class="head-title head-title--blue mb-2">بيانات
+                                                        الدائرة</span>
+                                                </div>
+                                                <table class="table-2">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>المحكمة</th>
+                                                            <th>نوع الدائرة</th>
+                                                            <th>رقم الدائرة</th>
+                                                            <th>يوم
+                                                                الإنعقاد</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>المحكمة
+                                                                الكلية</td>
+                                                            <td>إيجارات كلي</td>
+                                                            <td>09</td>
+                                                            <td>الأربعاء</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="col md-7">
+                                                <div
+                                                    class="indicator indicator--nigative">
+                                                    <div class="row">
+                                                        <div
+                                                            class="col-9 overflow-auto">
+                                                            <table
+                                                                class="table-3 table-3--nigative">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>
+                                                                            <h6>المتداول</h6>
+                                                                            <span>يوم
+                                                                                1
+                                                                                أكتوبر</span>
+                                                                        </th>
+                                                                        <th>
+                                                                            <h6>الجديدة</h6>
+                                                                            <span>من
+                                                                                1
+                                                                                أكتوبر</span>
+                                                                        </th>
+                                                                        <th>
+                                                                            <h6>المحالة</h6>
+                                                                            <span>من
+                                                                                1
+                                                                                أكتوبر</span>
+                                                                        </th>
+                                                                        <th>
+                                                                            <h6>القطعية</h6>
+                                                                            <span>من
+                                                                                1
+                                                                                أكتوبر</span>
+                                                                        </th>
+                                                                        <th
+                                                                            rowspan="1">
+                                                                            <h6>المتداول
+                                                                                الحالي</h6>
+                                                                        </th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <h4>76</h4>
+                                                                        </td>
+                                                                        <td>
+                                                                            <h4>11</h4>
+                                                                        </td>
+                                                                        <td>
+                                                                            <h4>0</h4>
+                                                                        </td>
+                                                                        <td>
+                                                                            <h4>3</h4>
+                                                                        </td>
+                                                                        <td
+                                                                            class="text-center">
+                                                                            <h2
+                                                                                class="h1">73</h2>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+
+                                                        <div class="col-3">
+                                                            <div
+                                                                class="indicator__boxbrsent text-center">
+                                                                <h6>مؤشر
+                                                                    الإنجاز</h6>
+                                                                <img
+                                                                    src="images/negative-session-icon.svg"
+                                                                    alt
+                                                                    srcset />
+                                                                <div
+                                                                    class="indicator__brsent h2 mt-2">15%</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-ofblue table-bg-blue mt-4">
+                                        <div class="table-container">
+                                            <table
+                                                class="table table--edit table-4">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">م</th>
+                                                        <th scope="col">تاريخ
+                                                            الجلسة</th>
+                                                        <th scope="col">
+                                                            <div
+                                                                class="c-text-blue">متداولة</div>
+                                                            <div
+                                                                class="c-th-text-low c-text-blue">
+                                                                الإجمالي
+                                                            </div>
+                                                        </th>
+                                                        <th
+                                                            scope="col">مؤجلة</th>
+                                                        <th
+                                                            scope="col">جديدة</th>
+                                                        <th
+                                                            scope="col">محالة</th>
+                                                        <th scope="col">
+                                                            <div
+                                                                class="c-text-black">الأحكام</div>
+                                                            <div
+                                                                class="c-th-text-low c-text-black">
+                                                                الإجمالي
+                                                            </div>
+                                                        </th>
+                                                        <th
+                                                            scope="col">محجوزة</th>
+                                                        <th scope="col">مد
+                                                            أجل</th>
+                                                        <th
+                                                            scope="col">الإجراء</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span>1</span></td>
+                                                        <td><span>2025-02-05</span></td>
+                                                        <td>
+                                                            <span
+                                                                class="c-text-blue c-text-f-up">17</span>
+                                                        </td>
+                                                        <td><span>22</span></td>
+                                                        <td><span>4</span></td>
+                                                        <td><span>0</span></td>
+                                                        <td>
+                                                            <span
+                                                                class="c-text-black c-text-f-up">12</span>
+                                                        </td>
+                                                        <td><span>2</span></td>
+                                                        <td><span>0</span></td>
+
+                                                        <td>
+                                                            <button
+                                                                class="btn view_btn form-control-inbtn px-4"
+                                                                type="button "
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#staticBackdrop">
+                                                                <img
+                                                                    src="images/Group 96954.svg"
+                                                                    alt="img" /><span>عرض
+                                                                    الجلسات
+                                                                </span>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span>1</span></td>
+                                                        <td><span>2025-02-05</span></td>
+                                                        <td>
+                                                            <span
+                                                                class="c-text-blue c-text-f-up">17</span>
+                                                        </td>
+                                                        <td><span>22</span></td>
+                                                        <td><span>4</span></td>
+                                                        <td><span>0</span></td>
+                                                        <td>
+                                                            <span
+                                                                class="c-text-black c-text-f-up">12</span>
+                                                        </td>
+                                                        <td><span>2</span></td>
+                                                        <td><span>0</span></td>
+
+                                                        <td>
+                                                            <button
+                                                                class="btn view_btn form-control-inbtn px-4"
+                                                                type="button "
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#staticBackdrop">
+                                                                <img
+                                                                    src="images/Group 96954.svg"
+                                                                    alt="img" /><span>عرض
+                                                                    الجلسات
+                                                                </span>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span>1</span></td>
+                                                        <td><span>2025-02-05</span></td>
+                                                        <td>
+                                                            <span
+                                                                class="c-text-blue c-text-f-up">17</span>
+                                                        </td>
+                                                        <td><span>22</span></td>
+                                                        <td><span>4</span></td>
+                                                        <td><span>0</span></td>
+                                                        <td>
+                                                            <span
+                                                                class="c-text-black c-text-f-up">12</span>
+                                                        </td>
+                                                        <td><span>2</span></td>
+                                                        <td><span>0</span></td>
+
+                                                        <td>
+                                                            <button
+                                                                class="btn view_btn form-control-inbtn px-4"
+                                                                type="button "
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#staticBackdrop">
+                                                                <img
+                                                                    src="images/Group 96954.svg"
+                                                                    alt="img" /><span>عرض
+                                                                    الجلسات
+                                                                </span>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile"
+                                    role="tabpanel"
+                                    aria-labelledby="pills-profile-tab"
+                                    tabindex="0"></div>
+                                <div class="tab-pane fade" id="pills-contact"
+                                    role="tabpanel"
+                                    aria-labelledby="pills-contact-tab"
+                                    tabindex="0">
+                                    <h3>لا يوجد بيانات</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // Modal  indecator negative-->
+            <!--Chat Button-->
+            <div class="chat_button">
+                <img src="images/Chat_Icon.svg" alt="Chat">
+            </div>
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/odometer.min.js"
+                integrity="sha512-v3fZyWIk7kh9yGNQZf1SnSjIxjAKsYbg6UQ+B+QxAZqJQLrN3jMjrdNwcxV6tis6S0s1xyVDZrDz9UoRLfRpWw=="
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"></script>
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+            <script></script>
+
+        </body>
+
+    </html>
