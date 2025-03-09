@@ -1576,6 +1576,9 @@ ul {
 .table-4 tbody tr td, .table-4 thead tr th{
   padding-inline-end: unset;
 }
+.table-4 tbody tr td:last-of-type{
+  width: 220px;
+}
 .c-text-blue,
 .c-text-black {
   font-weight: 500;
