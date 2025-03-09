@@ -1570,6 +1570,12 @@ ul {
 .table-4 tbody tr td {
   text-align: center;
 }
+.table-4 thead th{
+  padding-inline-start: unset;
+}
+.table-4 tbody tr td, .table-4 thead tr th{
+  padding-inline-end: unset;
+}
 .c-text-blue,
 .c-text-black {
   font-weight: 500;
