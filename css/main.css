@@ -390,16 +390,15 @@ footer .main_footer_copyright {
   margin-inline-end: 21.76px;
   margin-bottom: -4px;
 }
-.modal .modal-content {
-  border-radius: 63px;
+.modal .modal-body {
   padding: 42.76px 57.87px 42.71px 49.12px;
+}
+.modal-content {
+  border-radius: 63px;
 }
 /* .main_modal.modal-dialog {
   min-width: 58%;
 } */
-.main_modal .modal_btns {
-  margin-bottom: 54.62px;
-}
 .main_login_modal {
   gap: 37px;
 }
@@ -424,7 +423,6 @@ footer .main_footer_copyright {
   color: var(--white-color);
   border-radius: 38px;
   flex: 1;
-  min-width: 324px;
   text-align: center;
   padding-top: 66.55px;
   padding-bottom: 34px;
@@ -468,6 +466,9 @@ footer .main_footer_copyright {
 }
 .choice_body h4 img {
   margin-inline-end: 18px;
+}
+.modal.show .modal-dialog {
+  margin-inline: auto;
 }
 .modal:not(.main_modal) .modal_btns {
   margin-bottom: 36.62px;
@@ -2872,14 +2873,9 @@ body:has(.header) {
     padding-top: 46px;
     padding-bottom: 35px;
   }
-  .hero_card .card_text h2,
-  .main_login_modal .main_login_modal_text h3 {
+  .hero_card .card_text h2 {
     font-size: 24px;
     margin-bottom: 0;
-  }
-  .main_login_modal .main_login_modal_text h3 {
-    margin-top: 10px;
-    line-height: 30px;
   }
   .hero_card::before {
     top: 100px;
@@ -2990,17 +2986,29 @@ body:has(.header) {
   .menu-icon.active::before {
     transform: translateY(5px) rotate(45deg);
   }
-  .modal .modal-content {
+  /* .modal .modal-content {
     border-radius: 35px;
     padding-block: 0;
     padding-inline: 12px;
     text-align: center;
+  } */
+  .modal-content {
+    border-radius: 35px;
   }
-  .main_modal .modal_btns,
-  .modal:not(.main_modal) .modal_btns {
-    padding-top: 21px;
+  .modal .modal-body {
+    padding-bottom: 19.83px;
+    padding-top: 38.6px;
+    padding-inline: 21px;
+    text-align: center;
+  }
+  .main_login_modal .main_login_modal_text h3 {
+    font-size: 27px;
+    line-height: 34px;
+    margin-bottom: 10.63px;
+  }
+  .main_modal .modal_btns {
+    padding: 21px 20px 0 20px;
     margin-bottom: 0;
-    padding-inline: 6px;
   }
   .popup-tab-btn p {
     font-size: 14px;
@@ -3026,9 +3034,14 @@ body:has(.header) {
   .close-all img {
     width: 27px;
   }
-  .main_login_modal .main_login_modal_text p {
+  /* .main_login_modal .main_login_modal_text p {
     line-height: 21px;
     margin-bottom: 12px;
+  } */
+  .main_login_modal .main_login_modal_text p {
+    font-size: 17px;
+    line-height: 21px;
+    margin-bottom: 34.78px;
   }
   .hid_model .choice_body,
   .google_verification_model .choice_body {
@@ -4046,8 +4059,30 @@ body:has(.header) {
   .nav_card.active .nav_card_next {
     margin-top: -35px;
   }
+  .popup-tab-btn {
+    min-width: 0;
+  }
+  .popup-tab-btn {
+    flex: 1;
+    padding-block: 21px;
+    border-radius: 29px;
+    line-height: 21px;
+  }
+  /* .modal {
+    padding-block: 111px;
+  }
+  .modal .modal-content {
+    padding: 0;
+  }
+  .modal-body {
+    padding-bottom: 19.83px;
+    padding-top: 38.6px;
+  } */
 }
 @media (max-width: 400px) {
+  .modal {
+    padding-inline: 12px;
+  }
   .download {
     padding-top: 215px;
     margin-top: -100px;
