@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="431.584" height="963.207" viewBox="0 0 431.584 963.207">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_91597" data-name="Path 91597" d="M663.158-92.462s47.31.6,74.433,1.041c328.628,0,355.039-192.546,355.039-192.546V-44.685c1.258,2.113-.176,489.425-.176,723.539-63.994.527-429.415.362-429.415.362Z" transform="translate(209.242 283.967)" fill="#c2cce5" opacity="0.25"/>
+    </clipPath>
+  </defs>
+  <g id="Group_109507" data-name="Group 109507" transform="translate(1.821 -741.73)">
+    <g id="App_Section_BG" transform="translate(-872.627 -28)">
+      <path id="Path_67940" data-name="Path 67940" d="M661.572-92.48s48.207.6,76.02,1.059c328.628,0,355.039-192.546,355.039-192.546V-44.685c1.258,2.113-.176,489.425-.176,723.539-64.116.528-430.892.36-430.892.36Z" transform="translate(209.242 1053.697)" fill="#c2cce5" opacity="0.25"/>
+    </g>
+    <g id="Mask_Group_160" data-name="Mask Group 160" transform="translate(-872.627 741.73)" clip-path="url(#clip-path)">
+      <g id="Group_109507-2" data-name="Group 109507" transform="translate(414.208 -129.2)" opacity="0.27">
+        <path id="Path_91593" data-name="Path 91593" d="M474.192,429.419l330.78-330.78L722.163,15.818a53.961,53.961,0,0,0-76.3,0l-171.7,171.71L345.276,58.639,335.89,289.256Z" transform="translate(744.498 0.233)" fill="#fff"/>
+        <path id="Path_91594" data-name="Path 91594" d="M242.361,304.856l-89.834-89.834L327.989,39.56,448.947,160.518,304.609,304.856a44.022,44.022,0,0,1-62.248,0" transform="translate(579.588 458.525)" fill="#fff" opacity="0.194"/>
+        <rect id="Rectangle_52870" data-name="Rectangle 52870" width="224.584" height="171.06" transform="translate(923.298 482.368) rotate(-45)" fill="#fff" opacity="0.194"/>
+        <path id="Path_91595" data-name="Path 91595" d="M977.849,16.011a54.66,54.66,0,0,0-77.294,0L370.97,545.6,241.7,416.316,120.732,537.273l129.28,129.28-.076.063,82.519,82.519a54.379,54.379,0,0,0,76.891,0l650.807-650.82Z" transform="translate(211.067 0.054)" fill="#fff" opacity="0.532"/>
+        <path id="Path_91596" data-name="Path 91596" d="M1086.832,98.37l-82.405-82.393a54.5,54.5,0,0,0-77.1,0L397.862,545.412l-144.011-144a54.463,54.463,0,0,0-77.017,0L94.379,483.844l265.057,265.07a54.44,54.44,0,0,0,77.017,0l82.456-82.456-.075-.088Z" transform="translate(-94.379 0)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

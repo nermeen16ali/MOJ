@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="430" height="760" viewBox="0 0 430 760">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_52805" data-name="Rectangle 52805" width="430" height="760" transform="translate(1286.706)" fill="#fff" opacity="0.713"/>
+    </clipPath>
+  </defs>
+  <g id="Footer_BG" transform="translate(-1286.706 -4600)">
+    <rect id="Rectangle_52839" data-name="Rectangle 52839" width="430" height="760" transform="translate(1286.706 4600)" fill="#fff" opacity="0.713"/>
+    <g id="Footer_Pattern" transform="translate(0 4600)" clip-path="url(#clip-path)">
+      <g id="Group_109073" data-name="Group 109073" transform="translate(487.091 -263.624)" opacity="0.354">
+        <path id="Path_67927" data-name="Path 67927" d="M518.261,566.244,954.441,130.063,845.246,20.852a71.155,71.155,0,0,0-100.611,0L518.227,247.277,348.267,77.317l-12.377,304.1Z" transform="translate(1088.757 0.314)" fill="rgba(199,217,228,0.43)"/>
+        <path id="Path_67928" data-name="Path 67928" d="M270.986,389.391,152.527,270.932,383.9,39.56l159.5,159.5L353.069,389.391a58.049,58.049,0,0,1-82.083,0" transform="translate(812.872 617.236)" fill="rgba(199,217,228,0.43)" opacity="0.194"/>
+        <rect id="Rectangle_38525" data-name="Rectangle 38525" width="296.147" height="225.567" transform="translate(1217.501 636.072) rotate(-45)" fill="rgba(199,217,228,0.43)" opacity="0.194"/>
+        <path id="Path_67929" data-name="Path 67929" d="M1268.078,21.111a72.077,72.077,0,0,0-101.923,0L467.821,719.445l-24.3-24.306L282.368,852.992l25.953,25.953-.1.083L417.034,987.841a71.707,71.707,0,0,0,101.392,0l858.183-858.2Z" transform="translate(299.678 0.073)" fill="rgba(199,217,228,0.43)" opacity="0.532"/>
+        <path id="Path_67930" data-name="Path 67930" d="M1403.071,129.715,1294.408,21.069a71.867,71.867,0,0,0-101.674,0L494.566,719.2l-189.9-189.883a71.817,71.817,0,0,0-101.557,0l-108.73,108.7L443.895,987.55a71.787,71.787,0,0,0,101.557,0l108.73-108.73-.1-.116Z" transform="translate(-94.379 0)" fill="rgba(199,217,228,0.43)"/>
+      </g>
+    </g>
+  </g>
+</svg>
