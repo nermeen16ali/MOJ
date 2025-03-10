@@ -2454,30 +2454,30 @@ body:has(.header) {
   .branch_page {
     padding: 32px 16px 95px 16px;
   }
-  .remote_sessions_Yasir_logo {
+  /* .remote_sessions_Yasir_logo {
     width: 50px;
-  }
-  .header__layout {
+  } */
+  /* .header__layout {
     padding-inline-end: 0;
-  }
-  .judge_name + div,
+  } */
+  /* .judge_name + div,
   .judge_name {
     display: none;
-  }
-  .c-dropdown {
+  } */
+  /* .c-dropdown {
     background-color: transparent;
     padding: 0;
-  }
-  .c-dropdown .dropdown-toggle::after,
+  } */
+  /* .c-dropdown .dropdown-toggle::after,
   .notificatio-profile .logout span,
   .logocontainer h5 {
     display: none;
-  }
-  .header__layout {
+  } */
+  /* .header__layout {
     flex-direction: row;
     justify-content: end;
-  }
-  .notificatio-profile .logout,
+  } */
+  /* .notificatio-profile .logout,
   .notificatio-profile .switch_btn {
     margin-top: 0;
   }
@@ -2496,8 +2496,8 @@ body:has(.header) {
   .branch_page .switch_btn {
     font-size: 15px;
     font-weight: 500;
-  }
-  .notificatio-profile .notifiction button .noti-count {
+  } */
+  /* .notificatio-profile .notifiction button .noti-count {
     width: 16px;
     height: 16px;
     font-size: 8px;
@@ -2506,12 +2506,12 @@ body:has(.header) {
   }
   .main-sec {
     margin-top: 32px;
-  }
-  .table--edit:not(.table-4) tbody tr td,
+  } */
+  /* .table--edit:not(.table-4) tbody tr td,
   .table--edit:not(.table-4) thead th {
     padding-inline: 16px;
-  }
-  .table--edit tbody tr td:last-of-type {
+  } */
+  /* .table--edit tbody tr td:last-of-type {
     padding-inline-end: 6px;
   }
   .table--edit {
@@ -2532,7 +2532,7 @@ body:has(.header) {
   }
   .main-sec .page-menu li.item a {
     padding-block: unset;
-  }
+  } */
 }
 @media (max-width: 991px) {
   :root {
@@ -3164,11 +3164,11 @@ body:has(.header) {
   .c-cardIII span {
     font-size: 14px;
   }
-  .search_result h3 {
+  /* .search_result h3 {
     margin-top: 24px;
     font-size: 24px;
     margin-bottom: 16px;
-  }
+  } */
   .search_result .search_group {
     margin-top: 12px;
   }
