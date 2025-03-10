@@ -3775,7 +3775,7 @@ body:has(.header) {
     position: absolute;
     inset-inline-end: 28px;
     top: 57px;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   .menu_icon_container {
     top: 60px;
