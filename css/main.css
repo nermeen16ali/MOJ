@@ -443,6 +443,9 @@ footer .main_footer_copyright {
 .choice_body {
   background-color: #ebeff7;
   border-radius: 38px;
+  margin-top: 36.62px;
+  margin-bottom: 46.71px;
+  margin-inline: 54px;
 }
 .hid_model .choice_body {
   padding: 52.37px 71px 0 64px;
@@ -470,19 +473,19 @@ footer .main_footer_copyright {
 .modal.show .modal-dialog {
   margin-inline: auto;
 }
-.modal:not(.main_modal) .modal_btns {
+/* .modal:not(.main_modal) .modal_btns {
   margin-bottom: 36.62px;
+} */
+.modal_btns {
+  padding-inline-start: 57.78px;
+  padding-inline-end: 57.23px;
+  padding-top: 42.75px;
 }
 .verification_text {
   font-size: 34px;
   color: var(--main-dark-color-B);
-  white-space: nowrap;
   font-weight: 300;
   line-height: 43px;
-}
-.verification_text span {
-  color: var(--alt-dark-color);
-  font-weight: 500;
 }
 .hip_img {
   display: block;
@@ -2997,30 +3000,57 @@ body:has(.header) {
   }
   .modal .modal-body {
     padding-bottom: 19.83px;
-    padding-top: 38.6px;
     padding-inline: 21px;
     text-align: center;
+    padding-top: 0;
+  }
+  .hid_model .modal-body {
+    padding-bottom: 0;
+  }
+  .google_verification_model .choice_body {
+    margin-top: 16.14px;
+    margin-inline-start: 20.34px;
+    margin-inline-end: 21.89px;
+    margin-bottom: 26.08px;
+    padding-inline-start: 11.65px;
+    padding-inline-end: 12.11px;
+    padding-bottom: 0;
+  }
+  .main_modal .modal-body {
+    padding-top: 38.6px;
   }
   .main_login_modal .main_login_modal_text h3 {
     font-size: 27px;
     line-height: 34px;
+    margin-top: 0;
     margin-bottom: 10.63px;
   }
-  .main_modal .modal_btns {
+  .modal_btns {
     padding: 21px 20px 0 20px;
     margin-bottom: 0;
   }
   .popup-tab-btn p {
-    font-size: 14px;
+    font-size: 17px;
     line-height: 21px;
   }
   .popup-tab-btn {
     padding: 16px;
   }
-  .popup-tab-btn img {
+  .hid_verify_btn img {
+    margin-bottom: 10.5px;
+    width: 62.75px;
+  }
+  .hid_verify_btn {
+    order: 2;
+  }
+  .google_verify_btn img {
+    margin-bottom: 17.5px;
+    width: 53.55px;
+  }
+  /* .popup-tab-btn img {
     margin-bottom: 5px;
     width: 50px;
-  }
+  } */
   .main_login_modal .main_login_modal_text + div {
     gap: 12px;
   }
@@ -3045,11 +3075,24 @@ body:has(.header) {
     margin-inline: auto;
     margin-bottom: 34.78px;
   }
-  .hid_model .choice_body,
+  .lottie_area {
+    flex-direction: column;
+    gap: 13px;
+  }
+  /* .hid_model .choice_body,
   .google_verification_model .choice_body {
     padding: 0;
     padding-top: 18.6px;
     margin-top: 16.14px;
+    margin-bottom: 26.08px;
+    padding-inline-start: 11.65px;
+    padding-inline-end: 12.11px;
+  } */
+  .choice_body {
+    border-radius: 38px;
+    margin-top: 16.14px;
+    margin-inline-start: 20.34px;
+    margin-inline-end: 21.89px;
     margin-bottom: 26.08px;
     padding-inline-start: 11.65px;
     padding-inline-end: 12.11px;
@@ -3058,14 +3101,33 @@ body:has(.header) {
     gap: 3.99px;
     margin-block: 16px;
   }
-  .choice_body h4 img {
-    width: 26px;
-    margin-inline-end: 4px;
+  .choice_body h4 {
+    color: var(--alt-dark-color);
+    font-size: 21px;
+    margin-top: 17.5px;
+    line-height: 26px;
   }
-  .verification_text {
+  .choice_body h4 img {
+    width: 42.74px;
+    display: block;
+    margin-bottom: 17.7px;
+    margin-inline: auto;
+  }
+  .hid_model h4 img {
+    width: 44.37px;
+  }
+  /* .verification_text {
     font-size: 16px;
     line-height: 21px;
     margin-inline: auto;
+  } */
+  .verification_text {
+    font-size: 25px;
+    line-height: 31px;
+    /* color: var(--main-dark-color-B); */
+    font-weight: 300;
+    margin-inline: auto;
+    max-width: 242px;
   }
   .otp-box {
     padding-bottom: 14px;
@@ -3167,6 +3229,19 @@ body:has(.header) {
   }
   .faq {
     margin-top: 80px;
+  }
+  .verification_text {
+    width: 496px;
+  }
+  .verification_text span {
+    color: var(--alt-dark-color);
+    font-weight: 500;
+  }
+  .popup-tab-btn {
+    min-width: 316px;
+  }
+  .login_form{
+    width: 522px;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -4070,7 +4145,7 @@ body:has(.header) {
     border-radius: 29px;
     line-height: 21px;
   }
-  .modal .modal-dialog{
+  .modal .modal-dialog {
     max-width: unset !important;
     padding-inline: 28px;
   }
