@@ -3041,6 +3041,8 @@ body:has(.header) {
   .main_login_modal .main_login_modal_text p {
     font-size: 17px;
     line-height: 21px;
+    max-width: 223px;
+    margin-inline: auto;
     margin-bottom: 34.78px;
   }
   .hid_model .choice_body,
@@ -4068,6 +4070,10 @@ body:has(.header) {
     border-radius: 29px;
     line-height: 21px;
   }
+  .modal .modal-dialog{
+    max-width: unset !important;
+    padding-inline: 28px;
+  }
   /* .modal {
     padding-block: 111px;
   }
@@ -4080,9 +4086,6 @@ body:has(.header) {
   } */
 }
 @media (max-width: 400px) {
-  .modal {
-    padding-inline: 12px;
-  }
   .download {
     padding-top: 215px;
     margin-top: -100px;
@@ -4118,8 +4121,5 @@ body:has(.header) {
   }
   .faq .highlighted_text img {
     width: 140%;
-  }
-  .modal {
-    padding-inline: 12px;
   }
 }
