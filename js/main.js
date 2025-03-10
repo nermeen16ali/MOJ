@@ -1,14 +1,26 @@
 window.addEventListener("scroll", function () {
   let header = document.querySelector(".header");
   let menu_icon = document.querySelector(".menu_icon_container");
-  if (window.scrollY > 32) {
-    menu_icon.classList.add("moveToTop");
-    header.classList.add("scrolled");
+
+  if (window.innerWidth <= 767) {
+    if (window.scrollY > 12) {
+      menu_icon.classList.add("moveToTop");
+      header.classList.add("scrolled");
+    } else {
+      menu_icon.classList.remove("moveToTop");
+      header.classList.remove("scrolled");
+    }
   } else {
-    menu_icon.classList.remove("moveToTop");
-    header.classList.remove("scrolled");
+    if (window.scrollY > 32) {
+      menu_icon.classList.add("moveToTop");
+      header.classList.add("scrolled");
+    } else {
+      menu_icon.classList.remove("moveToTop");
+      header.classList.remove("scrolled");
+    }
   }
 });
+
 document.querySelector(".learn_more").addEventListener("click", function (e) {
   e.preventDefault();
   window.scrollBy({
