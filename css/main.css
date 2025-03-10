@@ -3379,6 +3379,7 @@ body:has(.header) {
     font-size: 32px;
     line-height: 46px;
   }
+
   .faq .highlighted_text img,
   .contact .highlighted_text img,
   .download .highlighted_text img,
