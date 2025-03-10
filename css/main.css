@@ -2690,9 +2690,6 @@ body:has(.header) {
   .nav_card.active > img {
     width: 47.73px;
   }
-  .nav_card.active .nav_card_next {
-    margin-top: -35px;
-  }
   .faq {
     position: relative;
     padding-bottom: 100px;
@@ -2770,61 +2767,6 @@ body:has(.header) {
     color: #2d3d5d;
     font-size: 15px;
   }
-  .contact {
-    background: url(../images/Footer-BG-mobile.svg);
-    padding-top: 65.53px;
-    padding-bottom: 25.18px;
-    background-repeat: no-repeat;
-    background-position: bottom;
-  }
-  .contact_boxes {
-    gap: 11.4px;
-    margin-bottom: 38px;
-    margin-top: 46px;
-  }
-  .contact_boxes a {
-    flex: 1;
-    border-radius: 23px;
-    padding-top: 19.7px;
-    padding-bottom: 17px;
-    height: 98.46px;
-    min-width: 0;
-  }
-  .contact_boxes a img {
-    width: 33.48px;
-  }
-  .contact_boxes .email_icon img {
-    width: 42.52px;
-    margin-inline: auto;
-  }
-  .contact_boxes span {
-    margin-top: 8px;
-    letter-spacing: -0.89px;
-    font-size: 15px;
-    line-height: 18.75px;
-    padding-inline: 4px;
-  }
-  .contact h2 {
-    font-size: 40px;
-    text-align: center;
-  }
-  .contact_links {
-    gap: 14px;
-  }
-  .contact_links ul li a {
-    letter-spacing: -0.83px;
-    font-size: 14px;
-    font-weight: 300;
-    margin-bottom: 16px;
-    line-height: 18px;
-  }
-  .contact_links h5 {
-    margin-bottom: 21px;
-    letter-spacing: -1px;
-  }
-  .logo_contact {
-    width: 139.78px;
-  }
   /* .download {
     background: none;
     padding-bottom: 110px;
@@ -2835,6 +2777,15 @@ body:has(.header) {
   .downloads {
     padding-top: 24px;
     gap: 12px;
+  }
+  .downloads a img {
+    width: 177px;
+  }
+  .logo_contact {
+    width: 139.78px;
+  }
+  .contact_left_side {
+    margin-inline: auto;
   }
   /* .downloads a img {
     width: 100px;
@@ -2949,13 +2900,6 @@ body:has(.header) {
   .card_text > img {
     width: 45px;
   }
-  .statistics {
-    padding-top: 185px;
-    padding-bottom: 80px;
-    background-image: url(../images/statistics-mobile-bg.svg);
-    margin-top: -20px;
-    z-index: 2;
-  }
   /* .download_text {
     padding-top: 44px;
   } */
@@ -2998,6 +2942,50 @@ body:has(.header) {
   }
   .menu-icon:not(.active):after {
     width: 24px;
+  }
+  .footer_wrapper {
+    padding-top: 13.94px;
+    padding-bottom: 63.63px;
+  }
+  .login footer {
+    width: 100%;
+  }
+  .main_footer_copyright span {
+    margin-top: 10.5px;
+    line-height: 14px;
+  }
+  .main_footer p span,
+  .menu_footer p span {
+    display: block;
+  }
+  .menu_footer {
+    gap: 32px;
+  }
+  .social_links a {
+    margin-inline-end: 26px;
+  }
+  .social_links a img {
+    width: 29.88px;
+  }
+  .social_links a img.youtube {
+    width: 42.5px;
+  }
+  /* .footer_logo {
+    width: 50px;
+  } */
+  .social_links {
+    margin-top: 28.71px;
+    margin-bottom: 28.07px;
+  }
+  .main_footer p span,
+  .menu_footer p span {
+    padding-inline-start: unset;
+  }
+  .by {
+    font-size: 11px;
+    color: #0c3443;
+    font-weight: 200;
+    margin-bottom: 18px;
   }
   .menu-icon.active::before {
     transform: translateY(5px) rotate(45deg);
@@ -3162,6 +3150,9 @@ body:has(.header) {
   .menu_content {
     margin-top: 112px;
   }
+  .faq {
+    margin-top: 80px;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   :root {
@@ -3216,6 +3207,10 @@ body:has(.header) {
   }
   .nav_card {
     min-height: 191px;
+  }
+  .stats_item .stats_result {
+    font-size: 42px;
+    margin-block: 15px;
   }
 }
 @media (min-width: 992px) {
@@ -3926,52 +3921,57 @@ body:has(.header) {
     gap: 20px;
     padding-top: 32px;
   }
-  .downloads a {
+  .contact_boxes {
+    gap: 11.4px;
+    margin-bottom: 38px;
+    margin-top: 46px;
+  }
+  .contact_boxes a {
     flex: 1;
+    border-radius: 23px;
+    padding-top: 19.7px;
+    padding-bottom: 17px;
+    height: 98.46px;
+    min-width: 0;
   }
-  .footer_wrapper {
-    padding-top: 13.94px;
-    padding-bottom: 63.63px;
+  .contact_boxes a img {
+    width: 33.48px;
   }
-  .login footer {
-    width: 100%;
+  .contact_boxes .email_icon img {
+    width: 42.52px;
+    margin-inline: auto;
   }
-  .main_footer_copyright span {
-    margin-top: 10.5px;
-    line-height: 14px;
+  .contact_boxes span {
+    margin-top: 8px;
+    letter-spacing: -0.89px;
+    font-size: 15px;
+    line-height: 18.75px;
+    padding-inline: 4px;
   }
-  .main_footer p span,
-  .menu_footer p span {
-    display: block;
+  .contact {
+    background: url(../images/Footer-BG-mobile.svg);
+    padding-top: 65.53px;
+    padding-bottom: 25.18px;
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
-  .menu_footer {
-    gap: 16px;
+  .contact h2 {
+    font-size: 40px;
+    text-align: center;
   }
-  .social_links a {
-    margin-inline-end: 26px;
+  .contact_links {
+    gap: 14px;
   }
-  .social_links a img {
-    width: 29.88px;
+  .contact_links ul li a {
+    letter-spacing: -0.83px;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 16px;
+    line-height: 18px;
   }
-  .social_links a img.youtube {
-    width: 42.5px;
-  }
-  /* .footer_logo {
-    width: 50px;
-  } */
-  .social_links {
-    margin-top: 28.71px;
-    margin-bottom: 28.07px;
-  }
-  .main_footer p span,
-  .menu_footer p span {
-    padding-inline-start: unset;
-  }
-  .by {
-    font-size: 11px;
-    color: #0c3443;
-    font-weight: 200;
-    margin-bottom: 18px;
+  .contact_links h5 {
+    margin-bottom: 21px;
+    letter-spacing: -1px;
   }
   .card_text .alt_btn {
     display: none;
@@ -4036,6 +4036,16 @@ body:has(.header) {
     opacity: 0;
     transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
   }
+  .statistics {
+    padding-top: 185px;
+    padding-bottom: 80px;
+    background-image: url(../images/statistics-mobile-bg.svg);
+    margin-top: -20px;
+    z-index: 2;
+  }
+  .nav_card.active .nav_card_next {
+    margin-top: -35px;
+  }
 }
 @media (max-width: 400px) {
   .download {
@@ -4057,7 +4067,11 @@ body:has(.header) {
   .large_heading {
     font-size: 42px;
   }
-  .highlighted_text img {
+  .highlighted_text img,
+  .faq .highlighted_text img,
+  .contact .highlighted_text img,
+  .download .highlighted_text img,
+  .services_header .highlighted_text img {
     width: 100%;
   }
   .contact_boxes {
