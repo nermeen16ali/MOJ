@@ -44,16 +44,14 @@ const menu = document.getElementById("menu");
 
 menuToggle.addEventListener("click", function () {
   if (menu.classList.contains("active")) {
-    // Add 'closing' class for animation before removing 'active'
     menu.classList.add("closing");
 
     setTimeout(() => {
       menu.classList.remove("active", "closing");
       document.body.classList.remove("no-scroll");
       menuToggle.classList.remove("active");
-    }, 100); // Wait for animation to complete (matches CSS transition time)
+    }, 100);
   } else {
-    // Open the menu normally
     menu.classList.add("active");
     menuToggle.classList.add("active");
     document.body.classList.add("no-scroll");

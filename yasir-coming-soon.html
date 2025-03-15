@@ -15,7 +15,7 @@
             src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <link rel="stylesheet" href="css/main.css">
     </head>
-    <body>
+    <body class="one_section_page">
         <!-- Header -->
         <div class="menu_icon_container">
             <div class="container-fluid">
@@ -27,17 +27,23 @@
         <header
             class="header">
             <div class="container-fluid">
-                <div>
-                    <a href="yasir-coming-soon.html" class="Yasir_logo">
+                <div class="d-none d-lg-inline-block">
+                    <a href="index.html" class="Yasir_logo">
                         <img src="images/Yasir_Logo_Horizontal.svg"
                             alt="Yasir Logo">
                     </a>
                 </div>
+                <a href="index.html"
+                    class="Yasir-mobile-logo d-lg-none img-container">
+                    <img src="images/Yasir-mobile-logo.svg" class="img-fluid"
+                        alt="Yasir Logo">
+                </a>
                 <div>
                     <span class="Moj_logo">
                         <img src="images/MOJ_Logo.svg" alt="Moj Logo">
                     </span>
-                    <a href="login.html" class="main_btn login_btn"><img
+                    <a href="login.html"
+                        class="main_btn login_btn d-none d-lg-inline-block"><img
                             src="images/Login_Icon.svg" alt="Login"><span>تسجيل
                             الدخول</span></a>
                     <button class="switch_btn"
@@ -71,11 +77,12 @@
                                     <span class="card_logo">
                                         <img src="images/Card_01_Logo.svg" alt>
                                     </span>
-                                    <div class="hero_card blue_card">
+                                    <div
+                                        class="hero_card blue_card with_disabled">
                                         <div class="card_text">
                                             <img src="images/Card_01_Icon.svg"
                                                 alt="Judges services">
-                                            <h2>خدمات القضاة</h2>
+                                            <h2>خدمات <br>القضاة</h2>
                                             <p>احصل على جميع الخدمات العدلية
                                                 والقضائية
                                                 بمكان واحد</p>
@@ -97,7 +104,8 @@
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
                             <div class="outer_hero_card disabled_card">
-                                <div class="inner_hero_card">
+                                <div
+                                    class="inner_hero_card disabled_inner_card">
                                     <span class="card_logo">
                                         <img src="images/card-2-logo.svg" alt>
                                     </span>
@@ -105,7 +113,7 @@
                                         <div class="card_text">
                                             <img src="images/Card_02_Icon.svg"
                                                 alt="Judges services">
-                                            <h2>خدمات المتقاضين</h2>
+                                            <h2>خدمات <br>المتقاضين</h2>
                                             <p>تواصل مع النيابة واطّلع <br> على
                                                 الشكاوى
                                                 والقضايا
@@ -125,7 +133,8 @@
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
                             <div class="outer_hero_card disabled_card">
-                                <div class="inner_hero_card">
+                                <div
+                                    class="inner_hero_card disabled_inner_card">
                                     <span class="card_logo">
                                         <img src="images/card-3-Logo.svg" alt>
                                     </span>
@@ -133,7 +142,7 @@
                                         <div class="card_text">
                                             <img src="images/Card_03_Icon.svg"
                                                 alt="Judges services">
-                                            <h2>النيابة العـــــامــــة</h2>
+                                            <h2>النيابة <br>العـــــامــــة</h2>
                                             <p>تواصل مع النيابة واطّلع <br>على
                                                 الشكاوى
                                                 والقضايا</p>
@@ -152,7 +161,8 @@
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
                             <div class="outer_hero_card disabled_card">
-                                <div class="inner_hero_card">
+                                <div
+                                    class="inner_hero_card disabled_inner_card">
                                     <span class="card_logo">
                                         <img src="images/card-4-Logo.svg" alt>
                                     </span>
@@ -160,7 +170,7 @@
                                         <div class="card_text">
                                             <img src="images/Card_04_Icon.svg"
                                                 alt="Judges services">
-                                            <h2>السجل العقــــــاري</h2>
+                                            <h2>السجل <br>العقــــــاري</h2>
                                             <p>كل معاملاتك العقارية في مكان
                                                 <br>واحد
                                                 بطريقة ميسّرة</p>
@@ -197,6 +207,9 @@
         </div>
         <!--menu-->
         <div class="menu" id="menu">
+            <a href="login.html" class="login_btn_mobile d-lg-none"><img
+                    src="images/login-icon-menu.svg" alt="Login"><span>تسجيل
+                    الدخول</span></a>
             <div class="container-fluid">
                 <div>
                     <div class="menu_content">
@@ -210,9 +223,13 @@
                     </div>
                 </div>
                 <div
-                    class="menu_footer">
-                    <div class="footer_logo">
+                    class="menu_footer d-lg-flex align-items-center text-center text-lg-start">
+                    <div class="footer_logo d-none d-lg-block">
                         <img src="images/Yasir_Logo_SVG_white.svg"
+                            class="img-fluid" alt="Yasir">
+                    </div>
+                    <div class="footer_logo d-lg-none">
+                        <img src="images/MOj-menu.svg"
                             class="img-fluid" alt="Yasir">
                     </div>
                     <div>
@@ -228,7 +245,7 @@
                                     alt="Instgram"></a>
                             <a href="#" target="_blank"><img
                                     src="images/youtube-brands_white.svg"
-                                    alt="Youtube"></a>
+                                    alt="Youtube" class="youtube"></a>
                         </div>
                         <p class="main_footer_copyright">
                             جميع الحقوق محفوظة لـ منصة يَسِّر &copy; 2025
@@ -242,6 +259,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="one_bottom">
+            <img src="images/one-section-bg-bottom.svg" alt>
         </div>
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/odometer.min.js"

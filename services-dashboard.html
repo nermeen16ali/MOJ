@@ -15,10 +15,17 @@
     </head>
 
     <body>
-        <div class="container-fluid branch_page">
+        <div class="menu_icon_container d-lg-none">
+            <div class="container-fluid">
+                <button class="menu-icon" id="menuToggle">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="container-fluid branch_page dashboard">
             <header>
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3">
                         <div class="logocontainer text-center">
                             <a href="index.html"><img
                                     src="images/Yasir_Logo_SVG.svg"
@@ -33,7 +40,7 @@
 
                         </div>
                     </div>
-                    <div class="col-9">
+                    <div class="col-12 col-lg-9">
                         <div class="header__layout">
                             <div class="dropdown c-dropdown">
                                 <a class=" dropdown-toggle" href="#"
@@ -41,9 +48,14 @@
                                     data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     <div class="d-flex">
-                                        <img class="c-dropdown__img"
-                                            src="images/User-Img.png"
-                                            alt srcset />
+                                        <div class="position-relative">
+                                            <img class="c-dropdown__img"
+                                                src="images/User-Img.png"
+                                                alt srcset />
+                                            <span
+                                                class="noti-count d-lg-none">١</span>
+                                        </div>
+
                                         <div>
                                             <div class="judge_name">
                                                 <span
@@ -52,8 +64,11 @@
                                             </div>
                                             <div>
                                                 <span
-                                                    class="c-dropdown__title">رئيس
+                                                    class="c-dropdown__title d-none d-lg-block">رئيس
                                                     القضاة</span>
+                                                <span
+                                                    class="c-dropdown__title d-lg-none">
+                                                    قاضي</span>
                                             </div>
                                         </div>
                                     </div>
@@ -70,7 +85,7 @@
                                 </ul>
                             </div>
 
-                            <div class="notificatio-profile">
+                            <div class="notificatio-profile d-none d-lg-flex">
                                 <div class="notifiction">
                                     <button>
                                         <img
@@ -87,7 +102,8 @@
                                         src="images/Logout.svg" />
                                 </a>
                                 <button class="switch_btn"
-                                    id="directionSwitch"> <span class="d-none d-md-inline-block">English</span>
+                                    id="directionSwitch"> <span
+                                        class="d-none d-md-inline-block">English</span>
                                     <span class="d-md-none">En</span>
                                 </button>
                             </div>
@@ -95,40 +111,50 @@
                     </div>
                 </div>
             </header>
-            <main class="main-sec dash_cards d-md-flex align-items-center justify-content-center">
-                <a class="c-cardIII" href="remote-sessions.html">
-                    <div class="icon">
-                        <img src="images/sessions-icon.svg"
-                            class="card_sessions_icon" alt>
-                    </div>
-                    <div class="list-title">
-                        <h4>تحضير
-                            الجلسات</h4>
-                        <span>عرض جميع
-                            الدوائر</span>
-                    </div>
-                </a>
-                <a class="c-cardIII" href="#">
-                    <div class="icon">
-                        <img src="images/calculator-icon.svg"
-                            class="card_calculator_icon" alt>
-                    </div>
-                    <div class="list-title">
-                        <h4>الحاسبة العمالية</h4>
-                        <span>حساب المستحقات</span>
-                    </div>
-                </a>
-                <a class="c-cardIII" href="#">
-                    <div class="icon">
-                        <img src="images/Search_Icon.svg"
-                            class="card_search_icon" alt>
-                    </div>
-                    <div class="list-title">
-                        <h4>بحث</h4>
-                        <span>الأحكام والإصدارات
-                            والتشريعات</span>
-                    </div>
-                </a>
+            <main
+                class="main-sec dash_cards row">
+                <div class="col-12 col-lg-4">
+                    <a class="c-cardIII main_dash_card"
+                        href="remote-session.html">
+                        <div class="icon">
+                            <img src="images/sessions-icon.svg"
+                                class="card_sessions_icon" alt>
+                        </div>
+                        <div class="list-title">
+                            <h4>تحضير
+                                الجلسات</h4>
+                            <span>عرض جميع
+                                الدوائر</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-4">
+                    <a class="c-cardIII calc_dash" href="#">
+                        <div class="icon">
+                            <img src="images/calculator-icon.svg"
+                                class="card_calculator_icon" alt>
+                        </div>
+                        <div class="list-title">
+                            <h4>الحاسبة العمالية</h4>
+                            <span>حساب المستحقات</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-4">
+                    <a class="c-cardIII search_card" href="#">
+                        <div class="icon">
+                            <img src="images/Search_Icon.svg"
+                                class="card_search_icon" alt>
+                        </div>
+                        <div class="list-title">
+                            <h4>بحث</h4>
+                            <span class="d-none d-lg-block">الأحكام والإصدارات
+                                والتشريعات</span>
+                            <span class="d-lg-none"> التشريعات والأحكام
+                            </span>
+                        </div>
+                    </a>
+                </div>
             </main>
 
             <!-- Footer -->
@@ -145,7 +171,7 @@
             </footer>
         </div>
         <!-- Modal  indecator positve-->
-        <div class="modal fade modal--edit modal_positive" id="staticBackdrop"
+        <!-- <div class="modal fade modal--edit modal_positive" id="staticBackdrop"
             data-bs-backdrop="static" data-bs-keyboard="false"
             tabindex="-1" aria-labelledby="staticBackdropLabel"
             aria-hidden="true">
@@ -566,10 +592,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- // Modal -->
         <!-- Modal  -->
-        <div class="modal fade modal--edit modal_negative"
+        <!-- <div class="modal fade modal--edit modal_negative"
             id="indecator_negative"
             data-bs-backdrop="static" data-bs-keyboard="false"
             tabindex="-1" aria-labelledby="staticBackdropLabel"
@@ -991,14 +1017,89 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- // Modal  indecator negative-->
         <!--Chat Button-->
         <div class="chat_button">
             <img src="images/Chat_Icon.svg" alt="Chat">
         </div>
+        <!--menu-->
+        <div class="menu" id="menu">
+            <a href="login.html" class="login_btn_mobile d-lg-none"><img
+                    src="images/login-icon-menu.svg" alt="Login"><span>تسجيل
+                    الدخول</span></a>
+            <div class="container-fluid">
+                <div>
+                    <div class="menu_content">
+                        <ul>
+                            <li><a href="index.html"
+                                    class="active">الرئيسية</a></li>
+                            <li><a href="#">عن يَسِّر</a></li>
+                            <li><a href="#">الخدمات الإلكترونية</a></li>
+                            <li><a href="#">تواصل معنا</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="menu_footer d-lg-flex align-items-center text-center text-lg-start">
+                    <div class="footer_logo d-none d-lg-block">
+                        <img src="images/Yasir_Logo_SVG_white.svg"
+                            class="img-fluid" alt="Yasir">
+                    </div>
+                    <div class="footer_logo d-lg-none">
+                        <img src="images/MOj-menu.svg"
+                            class="img-fluid" alt="Yasir">
+                    </div>
+                    <div>
+                        <div class="social_links">
+                            <a href="#" target="_blank"><img
+                                    src="images/LinedIn_white.svg"
+                                    alt="Linkedin"></a>
+                            <a href="#" target="_blank"><img
+                                    src="images/telegram_white.svg"
+                                    alt="Telegram"></a>
+                            <a href="#" target="_blank"><img
+                                    src="images/instagram-brands_white.svg"
+                                    alt="Instgram"></a>
+                            <a href="#" target="_blank"><img
+                                    src="images/youtube-brands_white.svg"
+                                    alt="Youtube" class="youtube"></a>
+                        </div>
+                        <p class="main_footer_copyright">
+                            جميع الحقوق محفوظة لـ منصة يَسِّر &copy; 2025
+                            <span>
+                                صُنع بـ <img src="images/Heart_white.svg"
+                                    alt="Heart"
+                                    class="heart">في إدارة تطوير النظم -
+                                وزارة العدل
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+                const menuToggle = document.getElementById("menuToggle");
+                const menu = document.getElementById("menu");
+
+                menuToggle.addEventListener("click", function () {
+                if (menu.classList.contains("active")) {
+                    menu.classList.add("closing");
+
+                    setTimeout(() => {
+                    menu.classList.remove("active", "closing");
+                    document.body.classList.remove("no-scroll");
+                    menuToggle.classList.remove("active");
+                    }, 100);
+                } else {
+                    menu.classList.add("active");
+                    menuToggle.classList.add("active");
+                    document.body.classList.add("no-scroll");
+                }
+                });
+            </script>
 
     </body>
 

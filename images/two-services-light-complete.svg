@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="760" height="452" viewBox="0 0 760 452">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="-0.174" r="8.141" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#c7d9e4"/>
+      <stop offset="1" stop-color="#e9edf4"/>
+    </radialGradient>
+    <clipPath id="clip-path">
+      <path id="Tanfez_Theme_Colors" d="M27,0H733a27,27,0,0,1,27,27V425a27,27,0,0,1-27,27H145A145,145,0,0,1,0,307V27A27,27,0,0,1,27,0Z" transform="translate(186 463)" fill="url(#radial-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_154" data-name="Mask Group 154" transform="translate(-186 -463)" clip-path="url(#clip-path)">
+    <rect id="Rectangle_52835" data-name="Rectangle 52835" width="346" height="926.358" transform="translate(1096.657 305.347) rotate(45)" fill="#fff" opacity="0.268"/>
+  </g>
+</svg>
